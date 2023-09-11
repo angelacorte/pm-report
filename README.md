@@ -1,2 +1,1 @@
-# latex-template
-Latex template
+Report for the course "Project Management"
