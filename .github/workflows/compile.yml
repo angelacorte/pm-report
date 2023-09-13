@@ -18,13 +18,62 @@ jobs:
           token: ${{ secrets.GH_ACCESS_TOKEN }}
           submodules: recursive
 
-      - name: Compile latex
+      - name: Compile latex approach
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "report.tex"
-          working_directory: "docs/"
+          root_file: "rustfields-approach.tex"
+          working_directory: "approach/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
 
+      - name: Compile latex breakdown-structure
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "breakdown-structure.tex"
+          working_directory: "rustfields-breakdown-structure/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex conditions-of-satisfaction
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "conditions-of-satisfaction.tex"
+          working_directory: "rustfields-conditions-of-satisfaction/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex domain-driven-development
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "domain-driven-development.tex"
+          working_directory: "rustfields-domain-driven-development/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex project-overview-statement
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "project-overview-statement.tex"
+          working_directory: "rustfields-project-overview-statement/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex project-proposal
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "rustfields-project-proposal.tex"
+          working_directory: "project-proposal/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex risk-analysis
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "rustfields-risk-analysis.tex"
+          working_directory: "risk-analysis/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
+      - name: Compile latex sprints
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "rustfields-sprints.tex"
+          working_directory: "sprints/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+  
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
