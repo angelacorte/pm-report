@@ -21,49 +21,49 @@ jobs:
       - name: Compile latex approach
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-approach.tex"
-          working_directory: "approach/"
+          root_file: "report.tex"
+          working_directory: "report/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
 
       - name: Compile latex breakdown-structure
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-breakdown-structure.tex"
-          working_directory: "breakdown-structure/"
+          root_file: "requirements-breakdown-structure.tex"
+          working_directory: "req-breakdown-structure/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex conditions-of-satisfaction
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-conditions-of-satisfaction.tex"
+          root_file: "conditions-of-satisfaction.tex"
           working_directory: "conditions-of-satisfaction/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex domain-driven-development
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-domain-driven-development.tex"
+          root_file: "domain-driven-development.tex"
           working_directory: "domain-driven-development/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex project-overview-statement
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-project-overview-statement.tex"
+          root_file: "project-overview-statement.tex"
           working_directory: "project-overview-statement/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex risk-analysis
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-risk-analysis.tex"
+          root_file: "risk-analysis.tex"
           working_directory: "risk-analysis/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex sprints
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "rustfields-sprints.tex"
+          root_file: "sprints.tex"
           working_directory: "sprints/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
