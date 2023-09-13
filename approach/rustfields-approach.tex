@@ -1,49 +1,55 @@
-\documentclass[12pt,a4paper,openright]{report}
-\usepackage[italian]{babel}
+\documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{url}
-%\usepackage{natbib}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
 \usepackage{graphicx}
-\usepackage{makeidx}
-\usepackage{listings}
-\usepackage[square,numbers,sort]{natbib}
-\usepackage{tabularx}
-\usepackage{float}
+\usepackage{cleveref}
 
-% version
+\graphicspath{ {img/} }
+
 \newcommand{\versionmajor}{0}
 \newcommand{\versionminor}{1}
-\newcommand{\versionpatch}{2}
+\newcommand{\versionpatch}{0}
 \newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
-\typeout{Document version: \version}
 
 \title{\LARGE
-    TITLE \\ \small SUBTITLE
+    Rustfields \\ 
+    \small
+    Project Report 
 }
 
 \author{
-   author 01 \\ \small email
+    Angela Cortecchia \\ 
+    \small 
+    angela.cortecchia@studio.unibo.it
     \and
-    author 02 \\ \small email
+    Paolo Penazzi \\ 
+    \small
+    paolo.penazzi@studio.unibo.it
 }
 
-\date{\small Academic year}
-\makeindex
+\date{\small Anno Accademico 2021/2022}
 
 \begin{document}
 \maketitle
-
+\thispagestyle{empty}
+\newpage
+\pagenumbering{roman} % Start roman numbering
 \tableofcontents
+\newpage
+\pagenumbering{arabic} % Start roman numbering
 
-\input{sections/sec00.tex}
-\input{sections/sec01.tex}
-\input{sections/sec02.tex}
-\input{sections/sec03.tex}
-\input{sections/sec04.tex}
-\input{sections/sec05.tex}
-% add more ....
+\input{sections/01-Intro.tex}
+\input{sections/02-Scoping.tex}
+\input{sections/03-Planning.tex}
+\input{sections/04-Execution.tex}
+\input{sections/05-Monitoring.tex}
+\input{sections/06-Closing.tex}
 
+\nocite{*}
 \bibliographystyle{plain}
 \bibliography{bibliography}
 
