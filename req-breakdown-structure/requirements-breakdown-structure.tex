@@ -8,13 +8,14 @@
 \usepackage{graphicx}
 \usepackage{cleveref}
 \usepackage{enumitem}
-\usepackage[showframe]{geometry}
+% \usepackage[showframe]{geometry}
 
-\newlength{\labelwd}
-\settowidth{\labelwd}{9.9.9}
-\setlist[enumerate]{label*=.\arabic*, wide = 0.5em, labelwidth=\labelwd}
-\setlist[enumerate, 1]{label=\arabic*}
-\setlist[enumerate, 2,3]{labelindent=-\dimexpr\labelwd+\labelsep}
+% \newlength{\labelwd}
+% \settowidth{\labelwd}{9.9.9}
+% \setlist[enumerate]{label*=.\arabic*, wide = 0.5em, labelwidth=\labelwd}
+% \setlist[enumerate, 1]{label=\arabic*}
+% \setlist[enumerate, 2,3]{labelindent=-\dimexpr\labelwd+\labelsep}
+
 
 \graphicspath{ {res/} }
 
@@ -23,12 +24,32 @@
 \newcommand{\versionpatch}{0}
 \newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
 
+\title{\LARGE
+    Rustfields \\ 
+    \small
+    Requirements Breakdown Structure
+    }
+
+\author{
+    Angela Cortecchia \\ 
+    \small 
+    angela.cortecchia@studio.unibo.it
+    \and
+    Paolo Penazzi \\ 
+    \small
+    paolo.penazzi@studio.unibo.it
+}
+
+\date{\small }
 
 \begin{document}
+\maketitle
+\newpage
+
 
 \section*{Requirements Breakdown Structure}
 
-Il team ha delineato la seguente Requirements Breakdown Structure, riportata di seguito anche con una 
+Il team ha delineato la seguente Requirements Breakdown Structure, riportata di seguito anche con una
 rappresentazione grafica.
 
 \subsection*{Goal}
@@ -42,26 +63,26 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
 
 \begin{enumerate}
     \item \textbf{Aggregate Computing nativo:}
-        \begin{enumerate}
-            \item \textbf{Execution}
-                \begin{enumerate}
-                    \item \textbf{Implement Slot}
-                    \item \textbf{Implement Path}
-                    \item \textbf{Implement Export}
-                    \item \textbf{Implement Context}
-                    \item \textbf{Implement VM}
-                \end{enumerate}
+          \begin{enumerate}
+              \item \textbf{Execution}
+                    \begin{enumerate}
+                        \item \textbf{Implement Slot}
+                        \item \textbf{Implement Path}
+                        \item \textbf{Implement Export}
+                        \item \textbf{Implement Context}
+                        \item \textbf{Implement VM}
+                    \end{enumerate}
 
-            \item \textbf{Language}
-                \begin{enumerate}
-                    \item \textbf{Implement Rep}
-                    \item \textbf{Implement Nbr}
-                    \item \textbf{Implement Foldhood}
-                    \item \textbf{Implement Branch}
-                \end{enumerate}
+              \item \textbf{Language}
+                    \begin{enumerate}
+                        \item \textbf{Implement Rep}
+                        \item \textbf{Implement Nbr}
+                        \item \textbf{Implement Foldhood}
+                        \item \textbf{Implement Branch}
+                    \end{enumerate}
 
-            \item \textbf{Test}
-        \end{enumerate}
+              \item \textbf{Test}
+          \end{enumerate}
 
     \item \textbf{Aggiornamento di ScaFi:}
 
