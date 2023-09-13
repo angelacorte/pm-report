@@ -9,7 +9,7 @@ config.plugins.push(
         "assets": [
             // Change this path if your pdf has another name.
             { "path": "report/report.pdf" },
-            { "path": "requirements-breakdown-structure/requirements-breakdown-structure.pdf" },
+            { "path": "req-breakdown-structure/requirements-breakdown-structure.pdf" },
             { "path": "conditions-of-satisfaction/conditions-of-satisfaction.pdf" },
             { "path": "domain-driven-development/domain-driven-development.pdf" },
             { "path": "project-overview-statement/project-overview-statement.pdf" },
