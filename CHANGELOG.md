@@ -1,3 +1,15 @@
+## [1.3.0](https://github.com/angelacorte/pm-report/compare/1.2.0...1.3.0) (2023-09-13)
+
+
+### Features
+
+* add initial rbs ([d32e94f](https://github.com/angelacorte/pm-report/commit/d32e94fff04df6d6687d3d7309ec395590f03176))
+
+
+### Documentation
+
+* add sprints ([c8a9178](https://github.com/angelacorte/pm-report/commit/c8a9178fccf2df480a67238fdfb839cb9eb51f6f))
+
 ## [1.2.0](https://github.com/angelacorte/pm-report/compare/1.1.1...1.2.0) (2023-09-13)
 
 
