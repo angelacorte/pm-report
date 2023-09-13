@@ -28,29 +28,29 @@ jobs:
       - name: Compile latex breakdown-structure
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "breakdown-structure.tex"
-          working_directory: "rustfields-breakdown-structure/"
+          root_file: "rustfields-breakdown-structure.tex"
+          working_directory: "breakdown-structure/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex conditions-of-satisfaction
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "conditions-of-satisfaction.tex"
-          working_directory: "rustfields-conditions-of-satisfaction/"
+          root_file: "rustfields-conditions-of-satisfaction.tex"
+          working_directory: "conditions-of-satisfaction/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex domain-driven-development
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "domain-driven-development.tex"
-          working_directory: "rustfields-domain-driven-development/"
+          root_file: "rustfields-domain-driven-development.tex"
+          working_directory: "domain-driven-development/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex project-overview-statement
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "project-overview-statement.tex"
-          working_directory: "rustfields-project-overview-statement/"
+          root_file: "rustfields-project-overview-statement.tex"
+          working_directory: "project-overview-statement/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
       - name: Compile latex project-proposal
