@@ -1,47 +1,357 @@
-\documentclass[12pt,a4paper,openright]{report}
-\usepackage[italian]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{url}
-%\usepackage{natbib}
-\usepackage{graphicx}
-\usepackage{makeidx}
-\usepackage{listings}
-\usepackage[square,numbers,sort]{natbib}
-\usepackage{tabularx}
-\usepackage{float}
 
-% version
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{cleveref}
+
+\graphicspath{ {res/} }
+
 \newcommand{\versionmajor}{0}
 \newcommand{\versionminor}{1}
-\newcommand{\versionpatch}{2}
+\newcommand{\versionpatch}{0}
 \newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
-\typeout{Document version: \version}
 
 \title{\LARGE
-    TITLE \\ \small SUBTITLE
-}
+    Rustfields \\ 
+    \small
+    Sprints
+    }
 
 \author{
-   author 01 \\ \small email
+    Angela Cortecchia \\ 
+    \small 
+    angela.cortecchia@studio.unibo.it
     \and
-    author 02 \\ \small email
+    Paolo Penazzi \\ 
+    \small
+    paolo.penazzi@studio.unibo.it
 }
 
-\date{\small Academic year}
-\makeindex
+\date{\small }
 
 \begin{document}
 \maketitle
+\newpage
 
-\tableofcontents
+\section*{Sprints}
 
-\input{sections/sec01.tex}
-\input{sections/sec02.tex}
-\input{sections/sec03.tex}
-% add more ....
+\par\noindent\rule{\textwidth}{0.5pt}
 
-\bibliographystyle{plain}
-\bibliography{bibliography}
+\subsection*{Sprint 1}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementare il concetto di VM Status
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Definire un API di alto livello
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementato l'Abstract Syntax tree
+                        \item Implementato il concetto di Export
+                        \item Configurato il workflow di release semantica
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementati i concetti di Path e Slot
+                    \end{itemize}
+              \item Iniziato il lavoro inerente ai fields reificati
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+\subsection*{Sprint 2}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementare il Context
+                        \item Iniziare l'implementazione del concetto di RoundVM
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementare il concetto di Export
+                        \item Reificare i fields
+                        \item Implementare RoundVM
+                        \item Implementare un API per i fields reificati
+                        \item Configurare release semantica
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementato il Context
+                        \item Iniziata l'implementazione della RoundVM
+                        \item Riparato il comportamento di Path
+                        \item Refattorizzata l'API di Context
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Subentrati problemi nella configurazione di release semantica
+                        \item Implementati i fields reificati
+                        \item Implementato Export
+                        \item Implementato Context
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+\subsection*{Sprint 3}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Completata la RoundVM
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Iniziare ad implementare i costrutti del field calculus
+                        \item Finire di implementare il concetto di RoundVM
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementata la RoundVM
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementati i costrutti del field calculus \texttt{nbr} e \texttt{rep}
+                        \item Deciso di fermare momentaneamente lo sviluppo di RoundVM per provare ad utilizzare quella sviluppata in RuFi-core
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+\subsection*{Sprint 4}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Impostare il progetto Java-Rust
+                        \item Sperimentare diverse soluzioni per la comunicazione tra Java e Rust (JNI, Wasmer, ScalaNative)
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Vedere se è possibile rifattorizzare la VM, facendo uso dei fields reificati
+                        \item Spostare i fields reificati in una libreria a parte
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Testati vari metodi per l'integrazione di RuFi in scala, optato per ScalaNative
+                        \item Costruito un esempio funzionante che utilizza Scala Native e integra qualche funzione di Rust utilizzando l'iteroperabilità di C
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementata libreria apposita per i fields reificati
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+\subsection*{Sprint 5}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementare i costrutti del linguaggio
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementare i restati costrutti e builtins
+                    \end{itemize}
+              \item In RuFi-core-wrapper
+                    \begin{itemize}
+                        \item Definire un progetto Gradle+SBT+Cargo che integri RuFi in Scala
+                        \item Partire con l'implementazione
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Aggiungere la dipendenza di ScaFi-core
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Il linguaggio non è stato implementato per via di alcune limitazioni di Rust
+                        \item Esplorate alcune soluzioni per aggirare i problemi
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Implementati i rimanenti costrutti e builtins
+                    \end{itemize}
+              \item In RuFi-core-wrapper
+                    \begin{itemize}
+                        \item Definito un progetto SBT+Cargo
+                        \item L'implementazione non è stata avviata per alcuni problemi di incompatibilità
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Riparata la semantic release
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+
+\subsection*{Sprint 6}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Esplorare soluzioni per l'implementazione dei costrutti del linguaggio
+                    \end{itemize}
+              \item In RuFi-core-wrapper
+                    \begin{itemize}
+                        \item Iniziare l'implementazione
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Aggiungere la dipendenza da ScaFi-core
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Aggiunta la dipendenza a ScaFi-core
+                        \item Implementati i costrutti fondamentali del linguaggio
+                    \end{itemize}
+              \item Sperimenti sull'interperabilità e costrutti del linguaggio in Rust hanno rivelato problemi complessi
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+
+\subsection*{Sprint 7}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Cambiare l'API della VM per renderla immutabile
+                        \item Implementare i costrutti fondamentali del linguaggio
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Aggiungere test "TestByRound" e "TestByEquivalence"
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Controllare la correttezza di "TestByRound"
+                        \item Aggiungere "TestByEquivalence"
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Decisione di \textbf{non} rendere la RoundVM immutabile
+                        \item Implementati i costrutti fondamentali del linguaggio
+                    \end{itemize}
+              \item In ScaFi-core
+                    \begin{itemize}
+                        \item Aggiunti i test
+                    \end{itemize}
+              \item In ScaFi-core-fields
+                    \begin{itemize}
+                        \item "TestByRound" funziona correttamente ma deve essere espanso
+                        \item "TestByEquivalence" non è stato implementato
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+
+\subsection*{Sprint 8}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementare i test "TestByRound" e "TestByEquivalence"
+                        \item Rifattorizzare \texttt{nest} in \texttt{nestIn} e \texttt{nestOut}
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Espandere "TestByRound"
+                        \item Implementare "TestByEquivalence"
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Rifattorizzata \texttt{nest} in \texttt{nestIn} e \texttt{nestOut}
+                    \end{itemize}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item Espansa "TestByRound"
+                        \item Implementata "TestByEquivalence"
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
+\par\noindent\rule{\textwidth}{0.5pt}
+
+
+\subsection*{Sprint 9}
+
+\begin{itemize}
+    \item Goals:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementare "TestByEquivalence"
+                    \end{itemize}
+          \end{itemize}
+    \item Review:
+          \begin{itemize}
+              \item In RuFi-core
+                    \begin{itemize}
+                        \item Implementato "TestByEquivalence"
+                    \end{itemize}
+          \end{itemize}
+\end{itemize}
+
 
 \end{document}
+
