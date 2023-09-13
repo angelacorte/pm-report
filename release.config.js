@@ -13,7 +13,6 @@ config.plugins.push(
             { "path": "conditions-of-satisfaction/rustfields-conditions-of-satisfaction.pdf" },
             { "path": "domain-driven-development/rustfields-domain-driven-development.pdf" },
             { "path": "project-overview-statement/rustfields-project-overview-statement.pdf" },
-            { "path": "project-proposal/rustfields-project-proposal.pdf" },
             { "path": "risk-analysis/rustfields-risk-analysis.pdf" },
             { "path": "sprints/rustfields-sprints.pdf" },
         ]

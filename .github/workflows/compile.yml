@@ -53,13 +53,6 @@ jobs:
           working_directory: "project-overview-statement/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
   
-      - name: Compile latex project-proposal
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: "rustfields-project-proposal.tex"
-          working_directory: "project-proposal/"
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
-  
       - name: Compile latex risk-analysis
         uses: xu-cheng/latex-action@v2
         with:
