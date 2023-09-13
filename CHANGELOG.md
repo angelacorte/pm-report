@@ -1,3 +1,21 @@
+## [1.2.0](https://github.com/angelacorte/pm-report/compare/1.1.1...1.2.0) (2023-09-13)
+
+
+### Features
+
+* add cos ([714cd3e](https://github.com/angelacorte/pm-report/commit/714cd3e208c2290033da8aaa4671b52be394e05b))
+
+
+### Refactoring
+
+* remove project proposal docs ([781bc26](https://github.com/angelacorte/pm-report/commit/781bc2688325e52acd314a4624a64332276e59a2))
+
+
+### General maintenance
+
+* change latex root files name ([38a2827](https://github.com/angelacorte/pm-report/commit/38a2827635a3f3d8935e436636ffefdf8dd63f34))
+* refactor bib ([9beed03](https://github.com/angelacorte/pm-report/commit/9beed03377679f833d6a36750d25d9338970d2eb))
+
 ## [1.1.1](https://github.com/angelacorte/pm-report/compare/1.1.0...1.1.1) (2023-09-13)
 
 
