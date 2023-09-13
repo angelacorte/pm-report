@@ -8,7 +8,14 @@ config.plugins.push(
     ["@semantic-release/github", {
         "assets": [
             // Change this path if your pdf has another name.
-            { "path": "docs/report.pdf" },
+            { "path": "approach/rustfields-approach.pdf" },
+            { "path": "breakdown-structure/rustfields-breakdown-structure.pdf" },
+            { "path": "conditions-of-satisfaction/rustfields-conditions-of-satisfaction.pdf" },
+            { "path": "domain-driven-development/rustfields-domain-driven-development.pdf" },
+            { "path": "project-overview-statement/rustfields-project-overview-statement.pdf" },
+            { "path": "project-proposal/rustfields-project-proposal.pdf" },
+            { "path": "risk-analysis/rustfields-risk-analysis.pdf" },
+            { "path": "sprints/rustfields-sprints.pdf" },
         ]
     }],
     ["@semantic-release/git", {
