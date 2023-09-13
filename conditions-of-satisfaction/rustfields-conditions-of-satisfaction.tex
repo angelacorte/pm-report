@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper,openright]{report}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{url}
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{listings}
+\usepackage[square,numbers,sort]{natbib}
+\usepackage{tabularx}
+\usepackage{float}
+
+% version
+\newcommand{\versionmajor}{0}
+\newcommand{\versionminor}{1}
+\newcommand{\versionpatch}{2}
+\newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
+\typeout{Document version: \version}
+
+\title{\LARGE
+    TITLE \\ \small SUBTITLE
+}
+
+\author{
+   author 01 \\ \small email
+    \and
+    author 02 \\ \small email
+}
+
+\date{\small Academic year}
+\makeindex
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\input{sections/sec01.tex}
+\input{sections/sec02.tex}
+\input{sections/sec03.tex}
+% add more ....
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
