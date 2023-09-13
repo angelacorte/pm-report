@@ -1,3 +1,32 @@
+## [1.1.0](https://github.com/angelacorte/pm-report/compare/1.0.0...1.1.0) (2023-09-13)
+
+
+### Features
+
+* add breakdown structure doc ([26451c1](https://github.com/angelacorte/pm-report/commit/26451c1fbe37b1d3584e4c6684c9f411963c8cda))
+* add conditions of satisfaction doc ([998e3a8](https://github.com/angelacorte/pm-report/commit/998e3a89f27dd2e7dcd0a4a56d937742bd68526f))
+* add DDD doc ([2893b89](https://github.com/angelacorte/pm-report/commit/2893b8965ddb29484ecbca7bc621a756d06fbd41))
+* add project overview statement doc ([e30117b](https://github.com/angelacorte/pm-report/commit/e30117bcb12be74d5c38360461afc8226d7f6179))
+* add project proposal doc ([c13d794](https://github.com/angelacorte/pm-report/commit/c13d7948a01d64ccb097702787158ccc29b82304))
+* add risk analysis doc ([5c58fea](https://github.com/angelacorte/pm-report/commit/5c58feacb7574bd01e4ef34f18bfe937b3fb3141))
+* add sprints doc ([7510e0b](https://github.com/angelacorte/pm-report/commit/7510e0b0ad24a13d3c6f590a0875febd2e75374e))
+* add sprints doc ([ea70835](https://github.com/angelacorte/pm-report/commit/ea70835687daa5328027b5a5f19f845a15574c92))
+
+
+### Bug Fixes
+
+* fix ci tex files name ([f438fe7](https://github.com/angelacorte/pm-report/commit/f438fe7579fcef54af4711a797c7cb496447f94b))
+
+
+### Refactoring
+
+* rename docs into approach ([74d0db4](https://github.com/angelacorte/pm-report/commit/74d0db415b3ffe1851a1b1e4914a204cfefcae77))
+
+
+### Build and continuous integration
+
+* update ci for others pdfs ([65b995c](https://github.com/angelacorte/pm-report/commit/65b995ccd34059be1a7f2871d3d2ece7c468d010))
+
 ## 1.0.0 (2023-09-12)
 
 
