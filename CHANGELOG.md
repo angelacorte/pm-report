@@ -1,3 +1,15 @@
+## [1.1.1](https://github.com/angelacorte/pm-report/compare/1.1.0...1.1.1) (2023-09-13)
+
+
+### General maintenance
+
+* update gitignore ([6fe3f35](https://github.com/angelacorte/pm-report/commit/6fe3f3546ce6d5a6571d68e791d270b61cab8bcc))
+
+
+### Documentation
+
+* add introduction to approach ([8476080](https://github.com/angelacorte/pm-report/commit/84760801de92e1ff966ca704994be688bf167e95))
+
 ## [1.1.0](https://github.com/angelacorte/pm-report/compare/1.0.0...1.1.0) (2023-09-13)
 
 
