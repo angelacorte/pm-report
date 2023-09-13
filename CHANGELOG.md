@@ -1,3 +1,15 @@
+## [1.3.1](https://github.com/angelacorte/pm-report/compare/1.3.0...1.3.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* fix view for requirements ([6fddeb7](https://github.com/angelacorte/pm-report/commit/6fddeb77be8029ce05cd8aceeeaf86987d10fc7b))
+
+
+### Build and continuous integration
+
+* fix ci ([b02583e](https://github.com/angelacorte/pm-report/commit/b02583ef3122ed0c2a1c32e393df25071ae546e4))
+
 ## [1.3.0](https://github.com/angelacorte/pm-report/compare/1.2.0...1.3.0) (2023-09-13)
 
 
