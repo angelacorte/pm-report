@@ -1,46 +1,71 @@
-\documentclass[12pt,a4paper]{report}
-\usepackage[italian]{babel}
+\documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{url}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
 \usepackage{graphicx}
-\usepackage{makeidx}
-\usepackage{listings}
-\usepackage[square,numbers,sort]{natbib}
-\usepackage{tabularx}
-\usepackage{float}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\usepackage[showframe]{geometry}
 
-% version
+\newlength{\labelwd}
+\settowidth{\labelwd}{9.9.9}
+\setlist[enumerate]{label*=.\arabic*, wide = 0.5em, labelwidth=\labelwd}
+\setlist[enumerate, 1]{label=\arabic*}
+\setlist[enumerate, 2,3]{labelindent=-\dimexpr\labelwd+\labelsep}
+
+\graphicspath{ {res/} }
+
 \newcommand{\versionmajor}{0}
 \newcommand{\versionminor}{1}
-\newcommand{\versionpatch}{2}
+\newcommand{\versionpatch}{0}
 \newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
-\typeout{Document version: \version}
 
-\title{\LARGE
-    TITLE \\ \small SUBTITLE
-}
-
-\author{
-   author 01 \\ \small email
-    \and
-    author 02 \\ \small email
-}
-
-\date{\small Academic year}
-\makeindex
 
 \begin{document}
-\maketitle
 
-\tableofcontents
+\section*{Requirements Breakdown Structure}
 
-\input{sections/sec01.tex}
-\input{sections/sec02.tex}
-\input{sections/sec03.tex}
-% add more ....
+Il team ha delineato la seguente Requirements Breakdown Structure, riportata di seguito anche con una 
+rappresentazione grafica.
 
-\bibliographystyle{plain}
-\bibliography{bibliography}
+\subsection*{Goal}
+
+Il goal principale del progetto, individuato dal team è \textbf{estendere ScaFi } una piattaforma che permette
+di scrivere programmi aggregati per reti di dispositivi.
+
+\subsection*{Requirements}
+
+A partire dal goal principale del progetto, sono stati individuati diversi requisiti:
+
+\begin{enumerate}
+    \item \textbf{Aggregate Computing nativo:}
+        \begin{enumerate}
+            \item \textbf{Execution}
+                \begin{enumerate}
+                    \item \textbf{Implement Slot}
+                    \item \textbf{Implement Path}
+                    \item \textbf{Implement Export}
+                    \item \textbf{Implement Context}
+                    \item \textbf{Implement VM}
+                \end{enumerate}
+
+            \item \textbf{Language}
+                \begin{enumerate}
+                    \item \textbf{Implement Rep}
+                    \item \textbf{Implement Nbr}
+                    \item \textbf{Implement Foldhood}
+                    \item \textbf{Implement Branch}
+                \end{enumerate}
+
+            \item \textbf{Test}
+        \end{enumerate}
+
+    \item \textbf{Aggiornamento di ScaFi:}
+
+    \item \textbf{Interoperabilità tra le due versioni:}
+\end{enumerate}
 
 \end{document}
