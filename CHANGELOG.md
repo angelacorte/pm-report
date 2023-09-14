@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/angelacorte/pm-report/compare/1.4.0...1.5.0) (2023-09-14)
+
+
+### Features
+
+* add rbs image ([9db4bc0](https://github.com/angelacorte/pm-report/commit/9db4bc05c873365bc85e9cdee6ac0546ad1e190a))
+
 ## [1.4.0](https://github.com/angelacorte/pm-report/compare/1.3.2...1.4.0) (2023-09-14)
 
 
