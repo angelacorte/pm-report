@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/angelacorte/pm-report/compare/1.5.0...1.6.0) (2023-09-14)
+
+
+### Features
+
+* complete risk analysis ([e26473e](https://github.com/angelacorte/pm-report/commit/e26473edb78e3d3ace8defb50feccbc7abfde822))
+
 ## [1.5.0](https://github.com/angelacorte/pm-report/compare/1.4.0...1.5.0) (2023-09-14)
 
 
