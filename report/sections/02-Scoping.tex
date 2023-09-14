@@ -1,15 +1,73 @@
 \section{Scoping and Initiation}
 
-sviluppa ed ottiene l'approvazione di una dichiarazione generale riguardante obiettivi e business value del progetto.
-in questa fase si sceglie se il "cosa" da realizzare va bene a tutti.
+% sviluppa ed ottiene l'approvazione di una dichiarazione generale riguardante obiettivi e business value del progetto.
+% in questa fase si sceglie se il "cosa" da realizzare va bene a tutti.
 
+Dalla volontà di intraprendere una ricerca all'interno dell'università, nasce l'idea di espandere un progetto sviluppato dai docenti.
+Si tratta dell'espansione del progetto ScaFi, una libreria e framework che offre funzionalità inerenti all'aggregate computing, ovvero un
+approccio alla programmazione che tratta un gruppo di dispositivi distribuiti come un'unica entità, semplificando la progettazione e l'implementazione
+di sistemi complessi distribuiti.
+
+Si decide di utilizzare un approccio di tipo \textbf{Domain Driven Development} (DDD), in quanto si è ritenuto potesse essere il modo migliore
+per comprendere a fondo il dominio, tenendo vari incontri con esperti del settore e stakeholders.
 
 \subsection{Riunione preliminare}
+\begin{itemize}
+    \item Partecipanti:
+          \begin{itemize}
+              \item 1 business manager
+              \item 1 project manager
+              \item 2 programmatori senior
+              \item 1 tecnografo
+              \item 2 esperti del dominio
+          \end{itemize}
+    \item Resoconto:
+          \begin{itemize}
+              \item Introdotta l'idea del progetto da parte degli stakeholders verso il team di sviluppo
+              \item Il team ha svolto varie domande a stakeholders ed esperti del dominio per inquadrare meglio il concetto
+              \item Al termine della riunione è stato convenuto di programmare altri incontri con gli esperti data la complessità del dominio
+          \end{itemize}
+    \item Output:
+          \begin{itemize}
+              \item Bozza di Ubiquitous Language
+              \item Bozza dei casi d'uso
+              \item Registrazione della riunione post consenso da parte degli esperti del dominio
+          \end{itemize}
+\end{itemize}
+
 \subsubsection{Ubiquitous Language (UL) e casi d'uso}
+Il termine "Ubiquitous Language" (UL) rappresenta il linguaggio condiviso e onnipresente all'interno di un team
+di progetto. Contiene la terminologia specifica per il business, oltre a concetti e termini emersi durante la
+modellazione dei casi d'uso.
+
+L'UL non è semplicemente un elenco di parole, ma una guida per l'uso preciso dei
+termini che deve essere applicata sia nella comunicazione tra i membri del team sia nell'implementazione del
+codice del modello. In questo modo, si assicura che tutti condividano una comprensione comune e precisa del
+dominio e dei concetti coinvolti nel progetto.
+
+L'UL redatto si può consultare nel documento \textbf{"Domain Driven Development"}.
+
 \subsubsection{Conditions of Satisfaction (COS)}
+Dalla riunione preliminare sono state estratte le \textbf{"Conditions of Satisfaction"}, consultabili nell'omonimo documento.
 
 \subsection{Primo project scoping meeting}
+Lo scopo del primo meeting è stato quello di definire le principali problematiche e i principali punti di forza all'interno del dominio.
+
+Siccome il team partiva da concetti già sviluppati, è stato fondamentale approfondirne la conoscenza con gli esperti del dominio e
+individuare zone in cui c'è stata carenza tecnica o meno, con l'obiettivo di migliorare queste zone.
+
+Per questo motivo inizialmente non è stata stilata un'agenda da rispettare, bensì gli esperti del dominio hanno fornito al team articoli e documentazione
+che avrebbero dovuto consultare prima dell'incontro successivo, in maniera tale da poter effettuare domande più mirate per lo sviluppo vero e proprio.
+
+In questo meeting è stata ritenuta necessaria la presenza del team al completo e di più stakeholders ed esperti possibili, rispettivamente 2 e 3.
+
+Dalle analisi ottenute dopo la riunione preliminare, il team ha presentato qualche possibile soluzione al problema, confrontate poi con gli esperti.
+Successivamente sono state discusse ed aggiornate le \textit{CoS}.
+
+Infine è stato indetto un nuovo meeting per discutere dei requisiti.
+
 \subsubsection{Project Overview Statement (POS) e Analisi dei rischi}
+Durante il primo meeting sono inoltre stati stilati i documenti \textbf{"Project Overview Statement} e \textbf{Risk Analysis}.
 
 \subsection{Secondo Project Scoping Meeting}
 \subsubsection{SWOT Analysis}
