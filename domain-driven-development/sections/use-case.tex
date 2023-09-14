@@ -1,1 +1,65 @@
 \section{Casi d'uso}
+
+In passato, i dispositivi informatici erano principalmente utilizzati da singoli individui. Tuttavia, con l'aumento del numero di dispositivi informatici e la loro diffusione nell'ambiente circostante, è diventato comune che molti dispositivi siano coinvolti nella fornitura di un singolo servizio. Ad esempio, un sistema di gestione del traffico potrebbe utilizzare una rete di sensori, telecamere e altri dispositivi per monitorare il traffico ed ottimizzare le rotte.
+
+Questo trend verso il calcolo collettivo ha portato diversi sfide per i programmatori. Le approccio tradizionali alla programmazione si concentrano sui singoli dispositivi, il che rende difficile gestire le interazioni tra dispositivi multipli. Questo può portare a problemi come comunicazione inefficiente, coordinazione non affidabile e comportamenti difficili da debuggare.
+
+La programmazione aggregata è un approccio emergente che affronta queste sfide. La programmazione aggregata tratta un gruppo di dispositivi come un'unica unità, semplificando la progettazione, la creazione e la manutenzione di sistemi distribuiti complessi. Questo approccio può contribuire a migliorare le prestazioni, l'affidabilità e la scalabilità dei sistemi distribuiti.
+
+Ecco alcuni vantaggi della programmazione aggregata:
+
+\begin{itemize}
+    \item Semplifica la progettazione di sistemi distribuiti complessi astraiendo i dettagli dei singoli dispositivi.
+    \item Migliora le prestazioni dei sistemi distribuiti riducendo la quantità di comunicazione tra dispositivi.
+    \item Rende i sistemi distribuiti più affidabili fornendo un punto singolo di fallimento per ciascun aggregato.
+    \item Rende i sistemi distribuiti più scalabili consentendo di aggiungere o rimuovere facilmente aggregati.
+\end{itemize}
+
+La programmazione aggregata è ancora un approccio relativamente nuovo, ma ha il potenziale per rivoluzionare il modo in cui costruiamo sistemi distribuiti. Con l'aumento del numero di dispositivi informatici, la programmazione aggregata diventerà sempre più importante per lo sviluppo di sistemi distribuiti efficienti, affidabili e scalabili.
+
+Ecco alcuni esempi di casi d'uso in cui la programmazione aggregata può essere utile.
+
+\subsection{Gestione Distribuita delle Folle}
+
+La sicurezza delle folle è importante in grandi eventi pubblici, come maratone o festival. Un modo per migliorare la sicurezza delle folle è utilizzare la programmazione aggregata per costruire un servizio di sicurezza delle folle. Questo servizio utilizzerebbe i telefoni cellulari per stimare la densità e la distribuzione della folla, avvisare le persone in aree pericolose e fornire consigli su come muoversi in sicurezza.
+
+Tradizionalmente, i servizi di sicurezza delle folle sono stati costruiti utilizzando approcci centrati sui dispositivi. Ciò significa che il programmatore deve pensare a come funzionerà il servizio su ciascun dispositivo, nonché a come i dispositivi interagiranno tra loro. Ciò può essere difficile e soggetto a errori.
+
+La programmazione aggregata adotta un approccio diverso. Invece di pensare ai singoli dispositivi, la programmazione aggregata considera il servizio come un insieme di moduli distribuiti. Il programmatore può quindi comporre questi moduli per formare un'applicazione completa specificando dove devono essere eseguiti e come deve fluire l'informazione tra di loro.
+
+Ad esempio, il modulo di stima della folla potrebbe produrre una struttura dati distribuita chiamata "campo computazionale" che mappa la posizione alla densità della folla. Questa struttura dati potrebbe poi essere utilizzata dal modulo di navigazione consapevole della folla e dal servizio di avviso.
+
+I dettagli su come i moduli interagiscono tra loro e come sono implementati possono essere generati automaticamente dalla composizione di strutture dati e servizi. Ciò rende più semplice costruire sistemi distribuiti complessi, riutilizzabili, resilienti e componibili.
+
+In breve, la programmazione aggregata rende più semplice la costruzione di servizi di sicurezza delle folle più efficaci ed efficienti.
+
+\subsection{Gestione dei Servizi di Rete}
+
+Uno dei problemi comuni nella gestione di servizi aziendali complessi è che spesso esistono molte dipendenze tra diversi server e servizi. Ciò può rendere difficile rispondere a un guasto del servizio, poiché potrebbe richiedere un arresto e un riavvio coordinato dei servizi in un ordine dettato dalle dipendenze dei servizi.
+
+La programmazione aggregata può essere utilizzata per automatizzare questo processo consentendo agli sviluppatori di definire gruppi di servizi come un'unità singola. Ciò semplifica il monitoraggio dello stato di tutti i servizi in un gruppo e la coordinazione del loro arresto e riavvio.
+
+Ad esempio, nel caso di una rete aziendale per una piccola azienda di produzione e distribuzione, i servizi potrebbero essere raggruppati in due aggregati: l'aggregato del database e l'aggregato dell'applicazione web. Se l'aggregato del database dovesse fallire, il framework di programmazione aggregata potrebbe automaticamente arrestare tutti i servizi nell'aggregato del database e quindi riavviarli nell'ordine corretto una volta che il database è di nuovo in funzione.
+
+Questo approccio può semplificare significativamente il processo di gestione di servizi aziendali complessi e può contribuire a garantire che i servizi siano avviati e fermati in modo coerente e ordinato.
+
+Ecco alcuni dei vantaggi dell'utilizzo della programmazione aggregata per la gestione dei servizi aziendali complessi:
+
+\begin{itemize}
+    \item Gestione semplificata dei servizi: La programmazione aggregata può rendere più facile monitorare lo stato di tutti i servizi in un gruppo e coordinare il loro arresto e riavvio.
+    \item Maggiore affidabilità: La programmazione aggregata può contribuire a garantire che i servizi siano avviati e fermati in modo coerente e ordinato, riducendo il rischio di guasti del servizio.
+    \item Maggiore scalabilità: La programmazione aggregata può essere utilizzata per gestire un gran numero di servizi, il che può contribuire a scalare le applicazioni aziendali.
+\end{itemize}
+
+\subsection{User Stories}
+
+Come utente...
+\begin{itemize}
+    \item Voglio definire il comportamento spaziale di una rete.
+    \item Voglio definire il comportamento temporale di una rete.
+    \item Voglio definire il comportamento spazio-temporale di una rete.
+    \item Voglio scrivere il programma aggregato in modo funzionale.
+    \item Voglio simulare l'esecuzione di un programma aggregato.
+    \item Voglio eseguire il programma aggregato su diversi tipi di dispositivi.
+\end{itemize}
+
