@@ -1,3 +1,15 @@
+## [1.3.2](https://github.com/angelacorte/pm-report/compare/1.3.1...1.3.2) (2023-09-14)
+
+
+### Bug Fixes
+
+* fix latex compiler error ([0d59b97](https://github.com/angelacorte/pm-report/commit/0d59b979570cc4d7e8c8c0ef5ab294d502f22215))
+
+
+### General maintenance
+
+* solve conflicts ([ccca5b0](https://github.com/angelacorte/pm-report/commit/ccca5b0efb42560bf7aef04044d5389d56591215))
+
 ## [1.3.1](https://github.com/angelacorte/pm-report/compare/1.3.0...1.3.1) (2023-09-13)
 
 
