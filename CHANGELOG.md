@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/angelacorte/pm-report/compare/1.7.0...1.7.1) (2023-09-14)
+
+
+### Documentation
+
+* remove sections ([d28d23b](https://github.com/angelacorte/pm-report/commit/d28d23bc49b3f0eeab0bef1aee10bcc2b8dacc97))
+
 ## [1.7.0](https://github.com/angelacorte/pm-report/compare/1.6.0...1.7.0) (2023-09-14)
 
 
