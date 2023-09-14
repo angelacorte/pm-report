@@ -61,7 +61,8 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
     \item \textbf{Aggregate Computing nativo} Attualmente ScaFi può essere eseguito solo su dispositivi in grado di 
     far girare una JVM. Vogliamo renderlo disponibile anche su dispositivi più leggeri, che non supportano la JVM.
         \begin{enumerate}
-            \item \textbf{Execution} Tutte le entità di ScaFi che riguardano l'esecuzione di un programma.
+            \item \textbf{Esecuzione di un programma aggregato} tutto quello che è necessario per l'esecuzione 
+            di un programma aggregato.
                 \begin{enumerate}
                     \item \textbf{Implementare Slot} 
                     \item \textbf{Implementare Path}
@@ -70,7 +71,8 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
                     \item \textbf{Implementare VM}
                 \end{enumerate}
 
-            \item \textbf{Language} Tutti i costrutti del linguaggio che permettono di scrivere un programma aggregato.
+            \item \textbf{Scrittura di un programma aggregato} Tutti i costrutti del linguaggio che permettono di 
+            scrivere un programma aggregato.
                 \begin{enumerate}
                     \item \textbf{Implementare Rep}
                     \item \textbf{Implementare Nbr}
@@ -78,13 +80,16 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
                     \item \textbf{Implementare Branch}
                 \end{enumerate}
 
-            \item \textbf{Test} La versione nativa di ScaFi deve essere testata almeno nella stessa misura del core 
-            originale.
+            \item \textbf{Test} L'esecuzione di un programma aggregato deve portare al risultato che ci si aspetta.
+                \begin{enumerate}
+                    \item \textbf{Testare l'esecuzione dei round}
+                    \item \textbf{Testare la semantica del linguaggio}
+                \end{enumerate}
         \end{enumerate}
 
     \item \textbf{Aggiornamento di ScaFi}
         \begin{enumerate}
-            \item \textbf{Aggiornare il core a Scala 3.} Tutto il core attuale è scritto in Scala 2: vogliamo aggiornarlo 
+            \item \textbf{Adottare Scala 3.} Tutto il core attuale è scritto in Scala 2: vogliamo aggiornarlo 
             all'ultima versione di Scala.
             
             \item \textbf{Espandere la suite di test.} Il core attuale ha una suite di test molto limitata: vogliamo
@@ -110,4 +115,9 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
             poter essere eseguito da una VM nativa.
         \end{enumerate}
 \end{enumerate}
+
+\begin{figure}[h]
+    \includegraphics[angle=90, width=\textwidth, height=\textheight]{res/rbs.png}
+\end{figure}
+
 \end{document}
