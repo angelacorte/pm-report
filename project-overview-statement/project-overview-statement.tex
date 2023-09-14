@@ -1,47 +1,101 @@
-\documentclass[12pt,a4paper,openright]{report}
-\usepackage[italian]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{url}
-%\usepackage{natbib}
-\usepackage{graphicx}
-\usepackage{makeidx}
-\usepackage{listings}
-\usepackage[square,numbers,sort]{natbib}
-\usepackage{tabularx}
-\usepackage{float}
 
-% version
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{cleveref}
+
+\graphicspath{ {res/} }
+
 \newcommand{\versionmajor}{0}
 \newcommand{\versionminor}{1}
-\newcommand{\versionpatch}{2}
+\newcommand{\versionpatch}{0}
 \newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
-\typeout{Document version: \version}
 
 \title{\LARGE
-    TITLE \\ \small SUBTITLE
-}
+    Rustfields \\ 
+    \small
+    Project Overview Statement
+    }
 
 \author{
-   author 01 \\ \small email
+    Angela Cortecchia \\ 
+    \small 
+    angela.cortecchia@studio.unibo.it
     \and
-    author 02 \\ \small email
+    Paolo Penazzi \\ 
+    \small
+    paolo.penazzi@studio.unibo.it
 }
 
-\date{\small Academic year}
-\makeindex
+\date{\small }
 
 \begin{document}
 \maketitle
+\par\noindent\rule{\textwidth}{0.5pt}
 
-\tableofcontents
 
-\input{sections/sec01.tex}
-\input{sections/sec02.tex}
-\input{sections/sec03.tex}
-% add more ....
+\section*{Problem/Opportunity}
+L'aggregate computing è una disciplina informatica che si concentra sulla manipolazione e
+l'elaborazione di dati distribuiti su una rete di dispositivi. Questa tecnologia può essere utilizzata in una vasta gamma
+di applicazioni e contesti per risolvere problemi complessi.
 
-\bibliographystyle{plain}
-\bibliography{bibliography}
+Tuttavia, il campo di applicazione dell'aggregate computing attualmente ha come vincolo quello di essere applicabile a dispositivi dotati di JVM (Java Virtual Machine),
+ciò comporta una notevole limitazione nella tipologia di dispositivi utilizzabili.
+
+Con l'evoluzione delle reti distrubuite, si è dunque giunti alla necessità di espandere le tipologie di dispositivi su cui è possibile effettuare
+questo tipo di calcoli.
+
+
+\section*{Project Goal}
+L'obiettivo principale di Rustfields è chiaro e centrato: consentire l'esecuzione affidabile del field calculus su una gamma diversificata di dispositivi.
+
+Lo scopo deve essere raggiunto garantendo efficienza, robustezza e adattabilità nelle condizioni variabili delle reti distribuite.
+
+
+\section*{Project Objectives}
+Gli obiettivi di questo progetto sono:
+\begin{itemize}
+    \item Aggiornare la versione esistente di ScaFi (Scala Fields), una libreria che offre funzionalità
+          per l'aggregate computing, dalla versione di Scala 2 a Scala 3
+    \item Sviluppare un framework di programmazione distribuita che consenta l'esecuzione di funzionalità di aggregate computing su dispositivi
+          con risorse limitate, eliminando la necessità di dipendere dalla Java Virtual Machine (JVM) e fornendo un'esperienza fluida su thin devices
+    \item Aggiungere i "campi" o "fields" come entità principali nel calcolo
+    \item Garantire che il framework Rustfields sia in grado di scalare in modo flessibile per supportare reti di dispositivi di dimensioni
+          variabili, da piccoli sistemi locali a reti distribuite di grandi dimensioni
+    \item Ampliare la test suite attualmente esistente in maniera tale da renderla più completa e comprensibile.
+    \item Garantire robustezza e scalabilità del nuovo framework
+\end{itemize}
+
+\section*{Success Criteria}
+\begin{itemize}
+    \item Porting completo del core di ScaFi da Scala 2 a Scala 3
+    \item Integrazione dei "fields" come entità principali nel calcolo, consentendo operazioni avanzate di aggregate computing
+    \item Porting del core di ScaFi nel linguaggio di programmazione Rust ed integrazione per renderlo interoperabile con ScaFi
+\end{itemize}
+
+\section*{Assumptions}
+\begin{itemize}
+    \item Si presuppone che il team lavori a tempo pieno
+    \item Sarà garantita la presenza di esperti del dominio all'interno del team
+\end{itemize}
+
+\section*{Risks}
+Presente un documento dell'analisi dei rischi denominato \textbf{"Risk Analysis"}.
+
+\section*{Obstacles}
+\begin{itemize}
+    \item La creazione di un framework di programmazione distribuita per l'aggregate computing su
+          thin devices richiede la gestione di complessità tecnica significativa
+    \item L'aggiornamento da Scala 2 a Scala 3 potrebbe comportare sfide di compatibilità che richiedono
+          la revisione e la modifica del codice esistente.
+    \item Potrebbero subentrare problemi di compatibilità tra Rust e Scala
+    \item Essendo un ambito inesplorato, bisogna considerare che la documentazione inerente potrebbe scarseggiare
+
+\end{itemize}
 
 \end{document}
