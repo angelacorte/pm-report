@@ -16,6 +16,12 @@
 % \setlist[enumerate, 1]{label=\arabic*}
 % \setlist[enumerate, 2,3]{labelindent=-\dimexpr\labelwd+\labelsep}
 
+<<<<<<< HEAD
+=======
+\setlist[enumerate,1]{label=\arabic*}
+\setlist[enumerate,2]{label=\theenumi.\arabic*}
+\setlist[enumerate,3]{label=\theenumii.\arabic*}
+>>>>>>> c905793 (feat: add rbs)
 
 \graphicspath{ {res/} }
 
@@ -62,31 +68,56 @@ di scrivere programmi aggregati per reti di dispositivi.
 A partire dal goal principale del progetto, sono stati individuati diversi requisiti:
 
 \begin{enumerate}
-    \item \textbf{Aggregate Computing nativo:}
-          \begin{enumerate}
-              \item \textbf{Execution}
-                    \begin{enumerate}
-                        \item \textbf{Implement Slot}
-                        \item \textbf{Implement Path}
-                        \item \textbf{Implement Export}
-                        \item \textbf{Implement Context}
-                        \item \textbf{Implement VM}
-                    \end{enumerate}
+    \item \textbf{Aggregate Computing nativo} Attualmente ScaFi può essere eseguito solo su dispositivi in grado di 
+    far girare una JVM. Vogliamo renderlo disponibile anche su dispositivi più leggeri, che non supportano la JVM.
+        \begin{enumerate}
+            \item \textbf{Execution} Tutte le entità di ScaFi che riguardano l'esecuzione di un programma.
+                \begin{enumerate}
+                    \item \textbf{Implementare Slot} 
+                    \item \textbf{Implementare Path}
+                    \item \textbf{Implementare Export}
+                    \item \textbf{Implementare Context}
+                    \item \textbf{Implementare VM}
+                \end{enumerate}
 
-              \item \textbf{Language}
-                    \begin{enumerate}
-                        \item \textbf{Implement Rep}
-                        \item \textbf{Implement Nbr}
-                        \item \textbf{Implement Foldhood}
-                        \item \textbf{Implement Branch}
-                    \end{enumerate}
+            \item \textbf{Language} Tutti i costrutti del linguaggio che permettono di scrivere un programma aggregato.
+                \begin{enumerate}
+                    \item \textbf{Implementare Rep}
+                    \item \textbf{Implementare Nbr}
+                    \item \textbf{Implementare Foldhood}
+                    \item \textbf{Implementare Branch}
+                \end{enumerate}
 
-              \item \textbf{Test}
-          \end{enumerate}
+            \item \textbf{Test} La versione nativa di ScaFi deve essere testata almeno nella stessa misura del core 
+            originale.
+        \end{enumerate}
 
-    \item \textbf{Aggiornamento di ScaFi:}
+    \item \textbf{Aggiornamento di ScaFi}
+        \begin{enumerate}
+            \item \textbf{Aggiornare il core a Scala 3.} Tutto il core attuale è scritto in Scala 2: vogliamo aggiornarlo 
+            all'ultima versione di Scala.
+            
+            \item \textbf{Espandere la suite di test.} Il core attuale ha una suite di test molto limitata: vogliamo
+            espanderla per garantire la correttezza del codice. 
+            
+            \item \textbf{Abilitare l'utilizzo di Fields reificati.}
+                \begin{enumerate}
+                    \item \textbf{Creare i Field come entità di primo livello.} L'aggregate computing si basa sulla 
+                    teoria del Field Calculus ma In Scafi i field vengono "simulati". 
+                    \item \textbf{Adattare i costrutti del linguaggio per essere utilizzzabili sui Fields.} I costrutti 
+                    del linguaggio non sono altro che operazioni da Field a Field. In ScaFi non è così ma nella nuova
+                    versione vogliamo essere più fedeli alla teoria. 
+                    \item \textbf{Rendere le operazioni sui field utilizzabili come monadi} Rendere i field monadici 
+                    permette di utilizzare i costrutti del linguaggio in modo più naturale e funzionale.
+                \end{enumerate}
+        \end{enumerate}
 
     \item \textbf{Interoperabilità tra le due versioni:}
+        \begin{enumerate}
+            \item \textbf{Standardizzare il formato dei messaggi.} La rete che esegue il programma aggregato è composta 
+            da dispositivi eterogeneei. Dispositivi di diversi tipi devono poter comunicare tra loro.
+            \item \textbf{Implementare un wrapper per il core in Rust.} Un programma aggregato scritto in Scala deve 
+            poter essere eseguito da una VM nativa.
+        \end{enumerate}
 \end{enumerate}
-
 \end{document}
