@@ -1,3 +1,27 @@
+## [1.7.0](https://github.com/angelacorte/pm-report/compare/1.6.0...1.7.0) (2023-09-14)
+
+
+### Features
+
+* add use cases to ddd ([f58be47](https://github.com/angelacorte/pm-report/commit/f58be4795e8d95f9ba9510a5f614e510da753c00))
+
+
+### General maintenance
+
+* add packages to tex ([277a7f5](https://github.com/angelacorte/pm-report/commit/277a7f575a6fdd8b2ea9966dcafff8bc39a94b0d))
+
+
+### Documentation
+
+* add UL to DDD ([726b510](https://github.com/angelacorte/pm-report/commit/726b510bc058357b11feeffede179967a7378369))
+
+
+### Refactoring
+
+* remove bib ([c33fdd0](https://github.com/angelacorte/pm-report/commit/c33fdd0e4c8d12f397a8a2021fbf05d0edee1c23))
+* remove useless png ([0c63c02](https://github.com/angelacorte/pm-report/commit/0c63c027043c0c7be36a74fe6b6f34b85e4676b4))
+* rename sections ([18f59dd](https://github.com/angelacorte/pm-report/commit/18f59dd989ccbea83759a313b56f85b58be4833f))
+
 ## [1.6.0](https://github.com/angelacorte/pm-report/compare/1.5.0...1.6.0) (2023-09-14)
 
 
