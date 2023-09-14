@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/angelacorte/pm-report/compare/1.7.1...1.7.2) (2023-09-14)
+
+
+### Documentation
+
+* add first parto to scoping ([049e142](https://github.com/angelacorte/pm-report/commit/049e142cc9ba9e69a031de15e7f2117ffabab524))
+
 ## [1.7.1](https://github.com/angelacorte/pm-report/compare/1.7.0...1.7.1) (2023-09-14)
 
 
