@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/angelacorte/pm-report/compare/1.7.5...1.8.0) (2023-09-15)
+
+
+### Features
+
+* complete execution ([ec48947](https://github.com/angelacorte/pm-report/commit/ec489473dcb62fd1d6e67649852043aea3abe6e6))
+
 ## [1.7.5](https://github.com/angelacorte/pm-report/compare/1.7.4...1.7.5) (2023-09-15)
 
 
