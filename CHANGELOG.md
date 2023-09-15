@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/angelacorte/pm-report/compare/1.7.3...1.7.4) (2023-09-15)
+
+
+### Documentation
+
+* add first part of planning ([7b5b104](https://github.com/angelacorte/pm-report/commit/7b5b1047471d2bb1b5a5fff3db8064babd972b86))
+
 ## [1.7.3](https://github.com/angelacorte/pm-report/compare/1.7.2...1.7.3) (2023-09-15)
 
 
