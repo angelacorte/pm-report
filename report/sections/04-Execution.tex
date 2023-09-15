@@ -1,18 +1,88 @@
 \section{Launching and Execution}
-si seleziona il personale da coinvolgere nel team di porgetto, si stabiliscono le regole operative del team e si aiuta il team a lavorare insieme
+%si seleziona il personale da coinvolgere nel team di porgetto, si stabiliscono le regole operative del team e si aiuta il team a lavorare insieme
 
-\subsection{Recruiting/Staffing}
+\subsection{Team di Sviluppo}
+Successivamente alla fase di planning, è stato definito il team di sviluppo, composto da:
+\begin{itemize}
+    \item 2 project manager;
+    \item 2 senior developer;
+    \item 3 junior developer;
+    \item 1 Sistemista;
+    \item client team (esperti del dominio).
+\end{itemize}
+
+Il team è oramai consolidato, e si è già lavorato insieme in passato, quindi non è stato necessario un periodo di rodaggio.
+Lato clienti invece sono stati coinvolti esperti del dominio, per fornire un supporto fondamentale e continuo per la comprensione
+degli eventuali problemi in fase di sviluppo.
+
+Del personale citato, hanno preso parte alle fasi di planning e scoping i Project Manager e i senior developer, mentre i junior developer
+sono stati coinvolti nelle fasi di sviluppo.
 
 \subsection{Kick-off Meeting}
+Da questa riunione si rappresenta l'effettivo inizio della fase di esecuzione del progetto.
+
+\subsubsection{Agenda}
+L'agenda del kick-off meeting è stata definita in maniera tale da informare tutti i membri del team di sviluppo sulle attività
+da svolgere.
+
+\begin{itemize}
+    \item Resoconto:
+          \begin{itemize}
+              \item Presentazione del team di sviluppo;
+              \item Presentazione del team di clienti;
+              \item Presentazione del progetto;
+              \item Presentazione del planning;
+              \item Presentazione delle regole operative per il team;
+              \item Presentazione del piano per la qualità;
+              \item Creazione di una schedula di lavoro a seconda delle disponibilità dei membri del team;
+              \item Domande e risposte.
+          \end{itemize}
+\end{itemize}
 
 \subsubsection{Regole operative per il team}
+\paragraph{Riunioni}
+\begin{itemize}
+    \item Almeno una riunione settimanale, con redazione di Project Review Meeting (compreso nelle Sprint);
+    \item Discussione di risultati ottenuti dalla sprint precedente ed eventuali problemi riscontrati;
+    \item Presentazione di task da terminare al fine di raggiungere le milestone;
+    \item Possibilità di organizzare riunioni straordinarie in caso di problemi o necessità (Problem Resolution Meetings);
+    \item Daily status meeting di durata di 15 minuti per pianificare la giornata.
+\end{itemize}
+
+\paragraph{Modalità di comunicazione}
+\begin{itemize}
+    \item Per comunicare sarà necessario farlo attraverso la piattaforma Slack nel canale apposito;
+    \item Al completamento di ogni attività, sarà necessario aggiornare il Project Board di GitHub;
+    \item I documenti verranno redatti sempre attraverso GitHub;
+    \item I membri sono tenuti a fornire conferme di ricezioni per le comunicazioni importanti.
+\end{itemize}
+
+\paragraph{Strategie di version control}
+
+\begin{itemize}
+    \item È stata creata un'organizzazione su GitHub, in cui sono stati creati i repository per i documenti e per il codice;
+    \item Ogni sotto-progetto ha il proprio repository, in cui sono presenti le issue e i progetti per la gestione del lavoro;
+    \item In ogni repository sarà presente un branch \textit{main} su cui è vietato lavorare, e un branch \textit{nomeFeature} su cui verranno effettuate le modifiche;
+    \item Ogni membro del team è tenuto a creare un branch per ogni issue assegnata, e a fare una pull request per il merge;
+    \item Ogni pull request deve essere approvata da uno sviluppatore senior.
+\end{itemize}
 
 \subsubsection{Piano per la qualità}
 
-\subsection{Esecuzione}
+Devono essere adottate le seguenti pratiche per raggiungere l'eccellenza tecnica:
 
-\subsubsection{1° Sprint Planning}
+\begin{itemize}
+    \item Utilizzo di uno strumento di build per la gestione delle dipendenze dalle librerie esterne;
+    \item Descrizione dei commit esclusivamente in lingua inglese;
+    \item Standardizzazione nella formattazione dei commit seguendo lo standard dei Conventional Commits;
+    \item Implementazione di un flusso di lavoro per il testing automatico della base di codice;
+    \item Inclusione della documentazione all'interno del repository del sotto-progetto;
+    \item Inserimento di commenti nel codice in conformità con le convenzioni del linguaggio utilizzato;
+    \item Adozione di pattern di programmazione consolidati per garantire la riutilizzabilità, la scalabilità e l'estensibilità del codice;
+    \item Creazione di un flusso di lavoro per la valutazione della copertura del codice.
+\end{itemize}
 
-\subsubsection{2° Sprint Planning}
 
-\subsubsection{3° Sprint Planning}
+
+\subsection{Sprint}
+È stato redatto un documento apposito per la pianificazione delle sprint (documento \textbf{"Sprints"}), in cui sono stati definiti i task da svolgere, le risorse necessarie e le tempistiche.
