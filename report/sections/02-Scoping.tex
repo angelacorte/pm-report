@@ -19,7 +19,8 @@ per comprendere a fondo il dominio, tenendo vari incontri con esperti del settor
               \item 1 project manager
               \item 2 programmatori senior
               \item 1 tecnografo
-              \item 2 esperti del dominio
+              \item 1 stakeholder
+              \item 1 esperti del dominio
           \end{itemize}
     \item Resoconto:
           \begin{itemize}
@@ -51,6 +52,15 @@ L'UL redatto si può consultare nel documento \textbf{"Domain Driven Development
 Dalla riunione preliminare sono state estratte le \textbf{"Conditions of Satisfaction"}, consultabili nell'omonimo documento.
 
 \subsection{Primo project scoping meeting}
+\textbf{Partecipanti}:
+\begin{itemize}
+    \item 1 business manager
+    \item 1 project manager
+    \item 2 programmatori senior
+    \item 1 tecnografo
+    \item 2 stakeholders
+    \item 3 esperti del dominio
+\end{itemize}
 Lo scopo del primo meeting è stato quello di definire le principali problematiche e i principali punti di forza all'interno del dominio.
 
 Siccome il team partiva da concetti già sviluppati, è stato fondamentale approfondirne la conoscenza con gli esperti del dominio e
@@ -67,15 +77,52 @@ Successivamente sono state discusse ed aggiornate le \textit{CoS}.
 Infine è stato indetto un nuovo meeting per discutere dei requisiti.
 
 \subsubsection{Project Overview Statement (POS) e Analisi dei rischi}
-Durante il primo meeting sono inoltre stati stilati i documenti \textbf{"Project Overview Statement} e \textbf{Risk Analysis}.
+Successivamente al primo meeting sono inoltre stati stilati i documenti \textbf{"Project Overview Statement} e \textbf{Risk Analysis}.
 
 \subsection{Secondo Project Scoping Meeting}
-\subsubsection{SWOT Analysis}
-\subsubsection{Modello di business}
+\textbf{Partecipanti}:
+\begin{itemize}
+    \item 1 business manager
+    \item 1 project manager
+    \item 2 programmatori senior
+    \item 1 tecnografo
+    \item 2 esperti del dominio
+\end{itemize}
+
+Lo scopo del secondo project scoping meeting è stato dunque quello di definire meglio i requisiti e come procedere in maniera più precisa.
+
+Inizialmente il team ha chiesto agli esperti del dominio di revisionare i vari documenti finora stilati.
+
+Dopo aver corretto alcune definizioni e concetti presenti nei documenti, il team ha posto ulteriori domande agli esperti del dominio per risolvere
+qualche dubbio sorto riguardo le funzionalità principali di ScaFi.
+
+Infine, è stata scritta una prima bozza della \textbf{"Requirement Breakdown Structure"} in presenza degli esperti del dominio.
+
 \subsubsection{Requirement Breakdown Structure (RBS)}
+Il documento completo \textbf{"Requirement Breakdown Structure"} è stato completato in dettaglio dal team Successivamente, sarà poi presentato agli esperti e stakeholders al meeting successivo.
 
 \subsection{Terzo Project Scoping Meeting}
-\subsubsection{Modello PMLC}
-\subsubsection{Workflow}
+\textbf{Partecipanti}:
+\begin{itemize}
+    \item 1 project manager
+    \item 3 core team members
+    \item 2 esperti del dominio
+\end{itemize}
 
-\subsection{Proof of concept}
+Il terzo meeting è stato organizzato per avere un confronto ed una conferma riguardo la RBS, inoltre è stato definito il modello PMLC
+da adottare, concordando poi un workflow di progetto.
+
+\subsubsection{Modello PMLC}
+Il modello PMLC scelto rientra nell'\textit{Agile Project Management}, si tratta del \textit{Adaptive Project Management
+    Life Cycle Model}, ovvero l'obiettivo è noto ma non la soluzione, la quale è influenzata dai cambiamenti attesi.
+
+
+\subsubsection{Workflow}
+Sono stati identificati alcuni processi automatizzabili all'interno del progetto:
+\begin{itemize}
+    \item testing;
+    \item aggiornamento delle dipendenze;
+    \item release semantica;
+    \item auto-merging dopo aver passato dei controlli automatici
+\end{itemize}
+
