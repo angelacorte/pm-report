@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/angelacorte/pm-report/compare/1.7.2...1.7.3) (2023-09-15)
+
+
+### Documentation
+
+* finish scoping ([8ae7c60](https://github.com/angelacorte/pm-report/commit/8ae7c60f5ce2292e1b2a65d08b985a0806812cfa))
+
 ## [1.7.2](https://github.com/angelacorte/pm-report/compare/1.7.1...1.7.2) (2023-09-14)
 
 
