@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/angelacorte/pm-report/compare/1.8.0...1.8.1) (2023-09-15)
+
+
+### Documentation
+
+* update monitoring sections ([c18048b](https://github.com/angelacorte/pm-report/commit/c18048b8b0a90f34bdd9c3657d60e6b452b32a3c))
+
 ## [1.8.0](https://github.com/angelacorte/pm-report/compare/1.7.5...1.8.0) (2023-09-15)
 
 
