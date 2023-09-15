@@ -1,3 +1,10 @@
+## [1.7.5](https://github.com/angelacorte/pm-report/compare/1.7.4...1.7.5) (2023-09-15)
+
+
+### Documentation
+
+* add resource estimate ([f10ce96](https://github.com/angelacorte/pm-report/commit/f10ce96f4bcbb8e6ed746c996662294e59d9ee1d))
+
 ## [1.7.4](https://github.com/angelacorte/pm-report/compare/1.7.3...1.7.4) (2023-09-15)
 
 
