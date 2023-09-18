@@ -1,3 +1,15 @@
+## [1.13.1](https://github.com/angelacorte/pm-report/compare/1.13.0...1.13.1) (2023-09-18)
+
+
+### Bug Fixes
+
+* fix typo ([d901256](https://github.com/angelacorte/pm-report/commit/d9012564895093bf48fb14b33daf6858c4162bf7))
+
+
+### Refactoring
+
+* remove useless sections ([3ee1a60](https://github.com/angelacorte/pm-report/commit/3ee1a60622474d8739e307b2bd51d4f086c2d4ff))
+
 ## [1.13.0](https://github.com/angelacorte/pm-report/compare/1.12.0...1.13.0) (2023-09-18)
 
 
