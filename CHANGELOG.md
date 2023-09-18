@@ -1,3 +1,10 @@
+## [1.11.0](https://github.com/angelacorte/pm-report/compare/1.10.0...1.11.0) (2023-09-18)
+
+
+### Features
+
+* add COS ([d44cbf0](https://github.com/angelacorte/pm-report/commit/d44cbf05d56a14f7207905fcd7513b4f15e04530))
+
 ## [1.10.0](https://github.com/angelacorte/pm-report/compare/1.9.0...1.10.0) (2023-09-18)
 
 
