@@ -63,48 +63,19 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
         \begin{enumerate}
             \item \textbf{Esecuzione di un programma aggregato} tutto quello che è necessario per l'esecuzione 
             di un programma aggregato.
-                \begin{enumerate}
-                    \item \textbf{Implementare Slot} 
-                    \item \textbf{Implementare Path}
-                    \item \textbf{Implementare Export}
-                    \item \textbf{Implementare Context}
-                    \item \textbf{Implementare VM}
-                \end{enumerate}
-
             \item \textbf{Scrittura di un programma aggregato} Tutti i costrutti del linguaggio che permettono di 
             scrivere un programma aggregato.
-                \begin{enumerate}
-                    \item \textbf{Implementare Rep}
-                    \item \textbf{Implementare Nbr}
-                    \item \textbf{Implementare Foldhood}
-                    \item \textbf{Implementare Branch}
-                \end{enumerate}
-
             \item \textbf{Test} L'esecuzione di un programma aggregato deve portare al risultato che ci si aspetta.
-                \begin{enumerate}
-                    \item \textbf{Testare l'esecuzione dei round}
-                    \item \textbf{Testare la semantica del linguaggio}
-                \end{enumerate}
         \end{enumerate}
 
     \item \textbf{Aggiornamento di ScaFi}
         \begin{enumerate}
             \item \textbf{Adottare Scala 3.} Tutto il core attuale è scritto in Scala 2: vogliamo aggiornarlo 
             all'ultima versione di Scala.
-            
             \item \textbf{Espandere la suite di test.} Il core attuale ha una suite di test molto limitata: vogliamo
             espanderla per garantire la correttezza del codice. 
-            
-            \item \textbf{Abilitare l'utilizzo di Fields reificati.}
-                \begin{enumerate}
-                    \item \textbf{Creare i Field come entità di primo livello.} L'aggregate computing si basa sulla 
-                    teoria del Field Calculus ma In Scafi i field vengono "simulati". 
-                    \item \textbf{Adattare i costrutti del linguaggio per essere utilizzzabili sui Fields.} I costrutti 
-                    del linguaggio non sono altro che operazioni da Field a Field. In ScaFi non è così ma nella nuova
-                    versione vogliamo essere più fedeli alla teoria. 
-                    \item \textbf{Rendere le operazioni sui field utilizzabili come monadi} Rendere i field monadici 
-                    permette di utilizzare i costrutti del linguaggio in modo più naturale e funzionale.
-                \end{enumerate}
+            \item \textbf{Abilitare l'utilizzo di Fields reificati.} Vogliamo abilitare l'utilizzo di Fields reificati
+            in ScaFi.
         \end{enumerate}
 
     \item \textbf{Interoperabilità tra le due versioni:}
