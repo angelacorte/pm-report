@@ -1,3 +1,15 @@
+## [1.10.0](https://github.com/angelacorte/pm-report/compare/1.9.0...1.10.0) (2023-09-18)
+
+
+### Features
+
+* add closing section to report ([8cf1b7c](https://github.com/angelacorte/pm-report/commit/8cf1b7c1675ab62af8f7fab90322952618789ca0))
+
+
+### Style improvements
+
+* add some spacing ([48d4f2d](https://github.com/angelacorte/pm-report/commit/48d4f2d19de931aadf1923abcdf1eefdb7f1eeb1))
+
 ## [1.9.0](https://github.com/angelacorte/pm-report/compare/1.8.1...1.9.0) (2023-09-18)
 
 
