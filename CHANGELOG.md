@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/angelacorte/pm-report/compare/1.13.1...1.14.0) (2023-09-18)
+
+
+### Features
+
+* add detail to wbs ([6a15208](https://github.com/angelacorte/pm-report/commit/6a152089ef84c800040ed3f8df0ddc0f6983014c))
+
 ## [1.13.1](https://github.com/angelacorte/pm-report/compare/1.13.0...1.13.1) (2023-09-18)
 
 
