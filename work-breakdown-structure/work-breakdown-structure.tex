@@ -1,0 +1,116 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{cleveref}
+\usepackage{enumitem}
+
+\setlist[enumerate,1]{label=\arabic*}
+\setlist[enumerate,2]{label=\theenumi.\arabic*}
+\setlist[enumerate,3]{label=\theenumii.\arabic*}
+\setlist[enumerate,4]{label=\theenumiii.\arabic*}
+
+\graphicspath{ {res/} }
+
+\newcommand{\versionmajor}{0}
+\newcommand{\versionminor}{1}
+\newcommand{\versionpatch}{0}
+\newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
+
+\title{\LARGE
+    Rustfields \\ 
+    \small
+    Work Breakdown Structure
+    }
+
+\author{
+    Angela Cortecchia \\ 
+    \small 
+    angela.cortecchia@studio.unibo.it
+    \and
+    Paolo Penazzi \\ 
+    \small
+    paolo.penazzi@studio.unibo.it
+}
+
+\date{\small }
+
+\begin{document}
+\maketitle
+\newpage
+
+
+\section*{Work Breakdown Structure}
+
+Il team ha delineato la seguente Work Breakdown Structure, riportata di seguito anche con una
+rappresentazione grafica.
+
+\subsection*{Goal}
+
+Il goal principale del progetto, individuato dal team è \textbf{estendere ScaFi } una piattaforma che permette
+di scrivere programmi aggregati per reti di dispositivi.
+
+\subsection*{Requirements}
+
+A partire dal goal principale del progetto, sono stati individuati diversi requisiti:
+
+\begin{enumerate}
+    \item \textbf{Aggregate Computing nativo}
+        \begin{enumerate}
+            \item \textbf{Esecuzione di un programma aggregato}
+            \begin{enumerate}
+                \item \textbf{Esplorare altri paradigmi di esecuzione di un programma aggregato}
+                \item \textbf{Implementare il concetto di Slot}
+                \item \textbf{Implementare il concetto di Path}
+                \item \textbf{Implementare il concetto di Export}
+                \item \textbf{Implementare il concetto di Context}
+                \item \textbf{Valutare di rendere immutabile la RoundVM}
+                \item \textbf{Implementare il concetto di stato della VM}
+                \item \textbf{Implementare la RoundVM}
+            \end{enumerate}
+
+            \item \textbf{Scrittura di un programma aggregato}
+            \begin{enumerate}
+                \item \textbf{Valutare l'introduzione di altri costrutti come Exchange e Share}
+                \item \textbf{Implementare i costrutti del linguaggio attualmente in ScaFi}
+                \begin{enumerate}
+                    \item \textbf{Implementare il costrutto Rep}
+                    \item \textbf{Implementare il costrutto Nbr}
+                    \item \textbf{Implementare il costrutto Foldhood}
+                    \item \textbf{Implementare il costrutto Branch}
+                \end{enumerate}
+            \end{enumerate}
+            
+
+            \item \textbf{Test}
+            \begin{enumerate}
+                \item \textbf{Testare l'esecuzione dei round}
+                \item \textbf{Testare la semantica del linguaggio}
+                \item \textbf{Trovare nuovi modi di testare il software}
+            \end{enumerate}
+        \end{enumerate}
+
+    \item \textbf{Aggiornamento di ScaFi}
+        \begin{enumerate}
+            \item \textbf{Adottare Scala 3.}
+            \item \textbf{Espandere la suite di test.}
+            \item \textbf{Abilitare l'utilizzo di Fields reificati.}
+            \begin{enumerate}
+                \item \textbf{Creare i Field come entità di primo livello.} 
+                \item \textbf{Adattare i costrutti del linguaggio per essere utilizzzabili sui Fields.}
+                \item \textbf{Rendere le operazioni sui field utilizzabili come monadi}
+            \end{enumerate}
+        \end{enumerate}
+
+    \item \textbf{Interoperabilità tra le due versioni:}
+        \begin{enumerate}
+            \item \textbf{Standardizzare il formato dei messaggi.}
+            \item \textbf{Implementare un wrapper per il core in Rust.}
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
