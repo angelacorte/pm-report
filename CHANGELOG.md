@@ -1,3 +1,15 @@
+## [1.12.0](https://github.com/angelacorte/pm-report/compare/1.11.0...1.12.0) (2023-09-18)
+
+
+### Features
+
+* add intro to report ([34adbad](https://github.com/angelacorte/pm-report/commit/34adbadf64dab9fb14c593fc88f2af81d140eb61))
+
+
+### Style improvements
+
+* change font type ([0f82395](https://github.com/angelacorte/pm-report/commit/0f823954ab8244a0cd909ca17652bb8ea76982c4))
+
 ## [1.11.0](https://github.com/angelacorte/pm-report/compare/1.10.0...1.11.0) (2023-09-18)
 
 
