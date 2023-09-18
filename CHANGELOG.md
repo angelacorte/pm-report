@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/angelacorte/pm-report/compare/1.8.1...1.9.0) (2023-09-18)
+
+
+### Features
+
+* add monitoring to report ([53ad403](https://github.com/angelacorte/pm-report/commit/53ad403339b62c325f0d1247563640950761fed4))
+
 ## [1.8.1](https://github.com/angelacorte/pm-report/compare/1.8.0...1.8.1) (2023-09-15)
 
 
