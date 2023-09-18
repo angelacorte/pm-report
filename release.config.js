@@ -13,6 +13,7 @@ config.plugins.push(
             { "path": "conditions-of-satisfaction/conditions-of-satisfaction.pdf" },
             { "path": "domain-driven-development/domain-driven-development.pdf" },
             { "path": "project-overview-statement/project-overview-statement.pdf" },
+            { "path": "work-breakdown-structure/work-breakdown-structure.pdf" },
             { "path": "risk-analysis/risk-analysis.pdf" },
             { "path": "sprints/sprints.pdf" },
         ]

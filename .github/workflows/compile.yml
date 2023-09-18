@@ -25,12 +25,19 @@ jobs:
           working_directory: "report/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
 
-      - name: Compile latex breakdown-structure
+      - name: Compile rbs
         uses: xu-cheng/latex-action@v2
         with:
           root_file: "requirements-breakdown-structure.tex"
           working_directory: "req-breakdown-structure/"
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
+
+      - name: Compile latex wbs
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "work-breakdown-structure.tex"
+          working_directory: "work-breakdown-structure/"
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape    
   
       - name: Compile latex conditions-of-satisfaction
         uses: xu-cheng/latex-action@v2
