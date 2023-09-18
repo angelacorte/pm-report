@@ -1,3 +1,16 @@
+## [1.13.0](https://github.com/angelacorte/pm-report/compare/1.12.0...1.13.0) (2023-09-18)
+
+
+### Features
+
+* add wbs ([dbedf15](https://github.com/angelacorte/pm-report/commit/dbedf15895f11e65ae5ecc9e95144a41a768702f))
+* remove useless requirements ([c72fd7c](https://github.com/angelacorte/pm-report/commit/c72fd7ca04b6c1414378c05d3b926f4512b380fa))
+
+
+### Build and continuous integration
+
+* update ci to include wbs ([8e6390f](https://github.com/angelacorte/pm-report/commit/8e6390fd2f25a0d8c66f962564999fa1cb525323))
+
 ## [1.12.0](https://github.com/angelacorte/pm-report/compare/1.11.0...1.12.0) (2023-09-18)
 
 
