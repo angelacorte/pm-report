@@ -61,80 +61,87 @@ A partire dal goal principale del progetto, sono stati individuati diversi requi
 \begin{enumerate}
     \color{teal}
     \item \textbf{Aggregate Computing nativo}
-        \begin{enumerate}
-            \item \textbf{Esecuzione di un programma aggregato}
-            \begin{enumerate}
-                \item \textbf{Esplorare altri paradigmi di esecuzione di un programma aggregato}
-                \item \textbf{Implementare il concetto di Slot}
-                \item \textbf{Implementare il concetto di Path}
-                \item \textbf{Implementare il concetto di Export}
-                \item \textbf{Implementare il concetto di Context}
-                \item \textbf{Valutare di rendere immutabile la RoundVM}
-                \item \textbf{Implementare il concetto di stato della VM}
-                \item \textbf{Implementare la RoundVM}
-            \end{enumerate}
+          \begin{enumerate}
+              \item \textbf{Esecuzione di un programma aggregato}
+                    \begin{enumerate}
+                        \item \textbf{Esplorare altri paradigmi di esecuzione di un programma aggregato}
+                        \item \textbf{Implementare il concetto di Slot}
+                        \item \textbf{Implementare il concetto di Path}
+                        \item \textbf{Implementare il concetto di Export}
+                        \item \textbf{Implementare il concetto di Context}
+                        \item \textbf{Valutare di rendere immutabile la RoundVM}
+                        \item \textbf{Implementare il concetto di stato della VM}
+                        \item \textbf{Implementare la RoundVM}
+                    \end{enumerate}
 
-            \item \textbf{Scrittura di un programma aggregato}
-            \begin{enumerate}
-                \item \textbf{Valutare l'introduzione di altri costrutti come Exchange e Share}
-                \item \textbf{Implementare i costrutti del linguaggio attualmente in ScaFi}
-                \begin{enumerate}
-                    \item \textbf{Implementare il costrutto Rep}
-                    \item \textbf{Implementare il costrutto Nbr}
-                    \item \textbf{Implementare il costrutto Foldhood}
-                    \item \textbf{Implementare il costrutto Branch}
-                \end{enumerate}
-            \end{enumerate}
-            
+              \item \textbf{Scrittura di un programma aggregato}
+                    \begin{enumerate}
+                        \item \textbf{Valutare l'introduzione di altri costrutti come Exchange e Share}
+                        \item \textbf{Implementare i costrutti del linguaggio attualmente in ScaFi}
+                              \begin{enumerate}
+                                  \item \textbf{Implementare il costrutto Rep}
+                                  \item \textbf{Implementare il costrutto Nbr}
+                                  \item \textbf{Implementare il costrutto Foldhood}
+                                  \item \textbf{Implementare il costrutto Branch}
+                              \end{enumerate}
+                    \end{enumerate}
 
-            \item \textbf{Test}
-            \begin{enumerate}
-                \item \textbf{Testare l'esecuzione dei round}
-                \item \textbf{Testare la semantica del linguaggio}
-                \item \textbf{Trovare nuovi modi di testare il software}
-            \end{enumerate}
-        \end{enumerate}
 
-    \color{cyan}    
+              \item \textbf{Test}
+                    \begin{enumerate}
+                        \item \textbf{Testare l'esecuzione dei round}
+                        \item \textbf{Testare la semantica del linguaggio}
+                        \item \textbf{Trovare nuovi modi di testare il software}
+                    \end{enumerate}
+              \item \textbf{Configurare il workflow di release semantica}
+
+          \end{enumerate}
+
+          \color{cyan}
     \item \textbf{Aggiornamento di ScaFi}
-        \begin{enumerate}
-            \item \textbf{Adottare Scala 3}
-            \begin{enumerate}
-                \item \textbf{Aggiornare i concetti per l'esecuzione di un programma aggregato}
-                \begin{enumerate}
-                    \item \textbf{Implementare Slot in Scala 3}
-                    \item \textbf{Implementare Path in Scala 3}
-                    \item \textbf{Implementare Export in Scala 3}
-                    \item \textbf{Implementare Context in Scala 3}
-                    \item \textbf{Implementare VMStatus in Scala 3}
-                    \item \textbf{Implementare RoundVM in Scala 3}
-                \end{enumerate}
+          \begin{enumerate}
+              \item \textbf{Adottare Scala 3}
+                    \begin{enumerate}
+                        \item \textbf{Aggiornare i concetti per l'esecuzione di un programma aggregato}
+                              \begin{enumerate}
+                                  \item \textbf{Implementare Slot in Scala 3}
+                                  \item \textbf{Implementare Path in Scala 3}
+                                  \item \textbf{Implementare Export in Scala 3}
+                                  \item \textbf{Implementare Context in Scala 3}
+                                  \item \textbf{Implementare VMStatus in Scala 3}
+                                  \item \textbf{Implementare RoundVM in Scala 3}
+                              \end{enumerate}
 
-                \item \textbf{Aggiornare il linguaggio in Scala 3}
-                \begin{enumerate}
-                    \item \textbf{Implementare Rep in Scala 3}
-                    \item \textbf{Implementare Nbr in Scala 3}
-                    \item \textbf{Implementare Branch in Scala 3}
-                    \item \textbf{Implementare Foldhood in Scala 3}
-                    \item \textbf{Implementare i Builtins in Scala 3}
-                \end{enumerate}
-                
-            \end{enumerate}    
-            \item \textbf{Espandere la suite di test}
-            \item \textbf{Abilitare l'utilizzo di Fields reificati}
-            \begin{enumerate}
-                \item \textbf{Creare i Field come entità di primo livello} 
-                \item \textbf{Adattare i costrutti del linguaggio per essere utilizzzabili sui Fields}
-                \item \textbf{Rendere le operazioni sui field utilizzabili come monadi}
-            \end{enumerate}
-        \end{enumerate}
+                        \item \textbf{Aggiornare il linguaggio in Scala 3}
+                              \begin{enumerate}
+                                  \item \textbf{Implementare Rep in Scala 3}
+                                  \item \textbf{Implementare Nbr in Scala 3}
+                                  \item \textbf{Implementare Branch in Scala 3}
+                                  \item \textbf{Implementare Foldhood in Scala 3}
+                                  \item \textbf{Implementare i Builtins in Scala 3}
+                              \end{enumerate}
 
-    \color{magenta}    
+                    \end{enumerate}
+              \item \textbf{Espandere la suite di test}
+                    \color{blue}
+              \item \textbf{Abilitare l'utilizzo di Fields reificati}
+                    \begin{enumerate}
+                        \item \textbf{Creare i Field come entità di primo livello}
+                        \item \textbf{Adattare i costrutti del linguaggio per essere utilizzzabili sui Fields}
+                        \item \textbf{Rendere le operazioni sui field utilizzabili come monadi}
+                        \item \textbf{Creare una libreria per l'utilizzo dei field reificati}
+                    \end{enumerate}
+              \item \textbf{Configurare il workflow di release semantica}
+
+          \end{enumerate}
+
+          \color{magenta}
     \item \textbf{Interoperabilità tra le due versioni:}
-        \begin{enumerate}
-            \item \textbf{Standardizzare il formato dei messaggi.}
-            \item \textbf{Implementare un wrapper per il core in Rust.}
-        \end{enumerate}
+          \begin{enumerate}
+              \item \textbf{Standardizzare il formato dei messaggi.}
+              \item \textbf{Implementare un wrapper per il core in Rust.}
+              \item \textbf{Definire un progetto SBT e Cargo.}
+          \end{enumerate}
 \end{enumerate}
 
 \end{document}
