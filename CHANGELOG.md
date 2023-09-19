@@ -1,3 +1,11 @@
+## [1.15.2](https://github.com/angelacorte/pm-report/compare/1.15.1...1.15.2) (2023-09-19)
+
+
+### Documentation
+
+* update tasks ([95f60d8](https://github.com/angelacorte/pm-report/commit/95f60d84dbfaf4663f7b13ffade1f7a954d8e832))
+* update wrapper tasks ([c6c90d2](https://github.com/angelacorte/pm-report/commit/c6c90d226806794346472c1cee9abf9d1f9642ef))
+
 ## [1.15.1](https://github.com/angelacorte/pm-report/compare/1.15.0...1.15.1) (2023-09-19)
 
 
