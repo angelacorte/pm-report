@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/angelacorte/pm-report/compare/1.15.0...1.15.1) (2023-09-19)
+
+
+### Documentation
+
+* update wbs ([7d47f96](https://github.com/angelacorte/pm-report/commit/7d47f9668b996f655ff991de3f4f78d711ebd9ce))
+
 ## [1.15.0](https://github.com/angelacorte/pm-report/compare/1.14.0...1.15.0) (2023-09-19)
 
 
