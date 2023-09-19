@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/angelacorte/pm-report/compare/1.15.2...1.15.3) (2023-09-19)
+
+
+### Documentation
+
+* update report sections ([c5a1a9d](https://github.com/angelacorte/pm-report/commit/c5a1a9db884b3e52b390dca668de48c2cc22bea2))
+
 ## [1.15.2](https://github.com/angelacorte/pm-report/compare/1.15.1...1.15.2) (2023-09-19)
 
 
