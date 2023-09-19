@@ -1,146 +1,76 @@
 \section{Scoping and Initiation}
 
-% sviluppa ed ottiene l'approvazione di una dichiarazione generale riguardante obiettivi e business value del progetto.
-% in questa fase si sceglie se il "cosa" da realizzare va bene a tutti.
+L'inizio di un progetto rappresenta una fase critica che richiede attenzione e pianificazione dettagliata.
+Nella situazione attuale, è stato preso in considerazione l'espansione del progetto ScaFi, un framework
+dedicato all'aggregate computing. Questa fase, chiamata "Scoping and Initiation," è essenziale per definire
+chiaramente gli obiettivi e il valore commerciale del progetto.\\
 
-Dalla volontà di intraprendere una ricerca all'interno dell'università, nasce l'idea di espandere un progetto sviluppato dai docenti.
-Si tratta dell'espansione del progetto ScaFi, una libreria e framework che offre funzionalità inerenti all'aggregate computing, ovvero un
-approccio alla programmazione che tratta un gruppo di dispositivi distribuiti come un'unica entità, semplificando la progettazione e l'implementazione
-di sistemi complessi distribuiti.
+La decisione di espandere il progetto ScaFi è stata influenzata da un'iniziativa all'interno dell'ambiente
+universitario. Il team di project management ha collaborato con docenti e altri esperti per valutare questa
+opportunità. Il progetto ScaFi ha lo scopo di semplificare la progettazione e l'implementazione di sistemi
+complessi distribuiti, trattando un gruppo di dispositivi distribuiti come un'unica entità.
+Questo approccio offre un grande valore nel contesto dell'aggregate computing.\\
 
-Si decide di utilizzare un approccio di tipo \textbf{Domain Driven Development} (DDD), in quanto si è ritenuto potesse essere il modo migliore
-per comprendere a fondo il dominio, tenendo vari incontri con esperti del settore e stakeholders.
+Per garantire una comprensione approfondita del dominio, è stato scelto di adottare il
+\textbf{Domain Driven Development} (DDD). Questo approccio richiede una stretta collaborazione con esperti
+del settore e stakeholders. Questa fase iniziale è stata fondamentale per assicurarsi che tutti i membri
+del team e gli stakeholder abbiano una visione chiara dei requisiti e delle aspettative del progetto.\\
 
 \subsection{Riunione preliminare}
-\begin{itemize}
-    \item Partecipanti:
-          \begin{itemize}
-              \item 1 business manager
-              \item 1 project manager
-              \item 2 programmatori senior
-              \item 1 tecnografo
-              \item 1 stakeholder
-              \item 1 esperti del dominio
-          \end{itemize}
-    \item Resoconto:
-          \begin{itemize}
-              \item Introdotta l'idea del progetto da parte degli stakeholders verso il team di sviluppo
-              \item Il team ha svolto varie domande a stakeholders ed esperti del dominio per inquadrare meglio il concetto
-              \item Al termine della riunione è stato convenuto di programmare altri incontri con gli esperti data la complessità del dominio
-          \end{itemize}
-    \item Output:
-          \begin{itemize}
-              \item Bozza di Ubiquitous Language
-              \item Bozza dei casi d'uso
-              \item Registrazione della riunione post consenso da parte degli esperti del dominio
-          \end{itemize}
-\end{itemize}
+Nella fase iniziale, è stata tenuta una riunione preliminare coinvolgendo diversi attori chiave, tra cui un
+business manager, un project manager, programmatori senior, un tecnografo, uno stakeholder e un esperto del
+dominio. In questa riunione, è stata presentata l'idea del progetto agli stakeholders e sono state poste
+domande chiave per definire meglio il contesto. È emerso che il dominio è complesso, e quindi è stato
+concordato di programmare ulteriori incontri con gli esperti per acquisire ulteriori dettagli.\\
+
+L'output di questa fase preliminare include una bozza di "Ubiquitous Language" (UL), che rappresenta il
+linguaggio condiviso all'interno del team di progetto. Questo linguaggio è cruciale per garantire una
+comunicazione precisa e una comprensione comune del dominio. Inoltre, è iniziata la definizione dei casi
+d'uso e sono state registrate le riunioni per riferimento futuro.\\
 
 \subsubsection{Ubiquitous Language (UL) e casi d'uso}
-Il termine "Ubiquitous Language" (UL) rappresenta il linguaggio condiviso e onnipresente all'interno di un team
-di progetto. Contiene la terminologia specifica per il business, oltre a concetti e termini emersi durante la
-modellazione dei casi d'uso.
-
-L'UL non è semplicemente un elenco di parole, ma una guida per l'uso preciso dei
-termini che deve essere applicata sia nella comunicazione tra i membri del team sia nell'implementazione del
-codice del modello. In questo modo, si assicura che tutti condividano una comprensione comune e precisa del
-dominio e dei concetti coinvolti nel progetto.
-
-L'UL redatto si può consultare nel documento \textbf{"Domain Driven Development"}.
+L'Ubiquitous Language (UL) è un elemento fondamentale nella fase di Scoping and Initiation. Non si
+tratta solo di un elenco di parole, ma di un insieme di termini e concetti specifici del dominio.
+Questo linguaggio condiviso è stato documentato nel rapporto sul \textbf{Domain Driven Development}
+(DDD) e servirà da guida per garantire una comunicazione precisa tra i membri del team e per
+l'implementazione del codice.\\
 
 \subsubsection{Conditions of Satisfaction (COS)}
-Dalla riunione preliminare sono state estratte le \textbf{"Conditions of Satisfaction"}, consultabili anche nell'omonimo documento.
+Dalla riunione preliminare, sono state identificate le "Conditions of Satisfaction" (COS) che rappresentano
+le aspettative chiave del cliente e del progetto. Queste includono vincoli di budget, vincoli di tempo,
+soddisfazione del cliente, rispetto del piano di qualità, documentazione completa dell'architettura
+software e compatibilità con l'architettura esistente.\\
 
-Dalle richieste del committente, emerse durante il primo meeting, il team ha individuato le seguenti \textbf{Condition of
-    Satisfaction}:
-
-\begin{enumerate}
-    \item \textbf{Vincoli di Budget:} Il progetto deve essere portato a termine rientrando nel budget previsto per la
-          sua esecuzione.
-    \item \textbf{Vincoli di tempo:} Portare a termine il progetto rientrando nelle tempistiche previste.
-    \item \textbf{Soddisfazione del cliente:} Il prodotto deve soddisfare il cliente, in modo tale che egli possa
-          utilizzarlo come base per sviluppi futuri.
-    \item \textbf{Rispetto del piano di qualità:} Rispetto delle convenzioni adottate dalle varie tecnologie utilizzate,
-          rispetto degli standard concordati durante tutte le fasi del progetto.
-    \item \textbf{Documentazione completa dell'architettura software:} La documentazione deve essere chiara e consultabile
-          nel caso in cui siano necessari chiarimenti.
-    \item \textbf{Compatibilità:} Il prodotto andrà a rimpiazzare il cuore di un'architettura composta da più moduli.
-          È fondamentale che possa sostituire il prodotto già esistente senza causare problemi di compatibilità.
-\end{enumerate}
-
+La comprensione chiara di queste COS è essenziale per garantire che il progetto soddisfi gli obiettivi
+aziendali e del cliente.\\
 
 \subsection{Primo project scoping meeting}
-\textbf{Partecipanti}:
-\begin{itemize}
-    \item 1 business manager
-    \item 1 project manager
-    \item 2 programmatori senior
-    \item 1 tecnografo
-    \item 2 stakeholders
-    \item 3 esperti del dominio
-\end{itemize}
-Lo scopo del primo meeting è stato quello di definire le principali problematiche e i principali punti di forza all'interno del dominio.
+Il primo incontro di project scoping ha coinvolto una vasta gamma di partecipanti, compresi un business manager, un project manager, programmatori senior, un tecnografo, stakeholder ed esperti del dominio. In questa fase, si è cercato di definire le principali sfide e opportunità del progetto.
 
-Siccome il team partiva da concetti già sviluppati, è stato fondamentale approfondirne la conoscenza con gli esperti del dominio e
-individuare zone in cui c'è stata carenza tecnica o meno, con l'obiettivo di migliorare queste zone.
+Poiché il progetto ScaFi si basa su concetti esistenti, è stato fondamentale acquisire una comprensione approfondita del dominio. Inizialmente, non è stata stabilita un'agenda rigida, ma sono stati richiesti agli esperti del dominio di fornire documentazione che il team avrebbe dovuto esaminare prima del prossimo incontro. Questo approccio ha permesso di fare domande più mirate nella fase successiva.
 
-Per questo motivo inizialmente non è stata stilata un'agenda da rispettare, bensì gli esperti del dominio hanno fornito al team articoli e documentazione
-che avrebbero dovuto consultare prima dell'incontro successivo, in maniera tale da poter effettuare domande più mirate per lo sviluppo vero e proprio.
-
-In questo meeting è stata ritenuta necessaria la presenza del team al completo e di più stakeholders ed esperti possibili, rispettivamente 2 e 3.
-
-Dalle analisi ottenute dopo la riunione preliminare, il team ha presentato qualche possibile soluzione al problema, confrontate poi con gli esperti.
-Successivamente sono state discusse ed aggiornate le \textit{CoS}.
-
-Infine è stato indetto un nuovo meeting per discutere dei requisiti.
+Durante questa riunione, il team ha presentato alcune possibili soluzioni alle sfide identificate, confrontandole poi con gli esperti del dominio. Le Conditions of Satisfaction (COS) sono state discusse ed aggiornate in base alle nuove informazioni.
 
 \subsubsection{Project Overview Statement (POS) e Analisi dei rischi}
-Successivamente al primo meeting sono inoltre stati stilati i documenti \textbf{"Project Overview Statement} e \textbf{Risk Analysis}.
+Successivamente al primo meeting, è stato redatto il documento "Project Overview Statement" e condotta un'analisi dei rischi per comprendere meglio il contesto e le sfide del progetto.
 
 \subsection{Secondo Project Scoping Meeting}
-\textbf{Partecipanti}:
-\begin{itemize}
-    \item 1 business manager
-    \item 1 project manager
-    \item 2 programmatori senior
-    \item 1 tecnografo
-    \item 2 esperti del dominio
-\end{itemize}
+Nel secondo incontro di project scoping, sono stati nuovamente coinvolti un business manager, un project manager, programmatori senior, un tecnografo e due esperti del dominio. L'obiettivo era rifinire ulteriormente i requisiti del progetto.
 
-Lo scopo del secondo project scoping meeting è stato dunque quello di definire meglio i requisiti e come procedere in maniera più precisa.
+Inizialmente, è stato richiesto agli esperti del dominio di rivedere i documenti esistenti per garantire la correttezza delle definizioni e dei concetti. Successivamente, sono state poste ulteriori domande per chiarire gli aspetti cruciali delle funzionalità di ScaFi.
 
-Inizialmente il team ha chiesto agli esperti del dominio di revisionare i vari documenti finora stilati.
-
-Dopo aver corretto alcune definizioni e concetti presenti nei documenti, il team ha posto ulteriori domande agli esperti del dominio per risolvere
-qualche dubbio sorto riguardo le funzionalità principali di ScaFi.
-
-Infine, è stata scritta una prima bozza della \textbf{"Requirement Breakdown Structure"} in presenza degli esperti del dominio.
+Durante questo incontro, è iniziata la sviluppo di una bozza della "Requirement Breakdown Structure" (RBS), che rappresenterà una mappa dettagliata dei requisiti del progetto.
 
 \subsubsection{Requirement Breakdown Structure (RBS)}
-Il documento completo \textbf{"Requirement Breakdown Structure"} è stato completato in dettaglio dal team Successivamente, sarà poi presentato agli esperti e stakeholders al meeting successivo.
+La Requirement Breakdown Structure (RBS) è un componente chiave nella definizione dei requisiti del progetto. Questa struttura dettagliata dei requisiti sarà completata successivamente dal team e presentata agli esperti del dominio e agli stakeholder al prossimo incontro.
 
 \subsection{Terzo Project Scoping Meeting}
-\textbf{Partecipanti}:
-\begin{itemize}
-    \item 1 project manager
-    \item 3 core team members
-    \item 2 esperti del dominio
-\end{itemize}
-
-Il terzo meeting è stato organizzato per avere un confronto ed una conferma riguardo la RBS, inoltre è stato definito il modello PMLC
-da adottare, concordando poi un workflow di progetto.
+Nel terzo incontro di project scoping, sono stati coinvolti un project manager, tre membri chiave del team e due esperti del dominio. L'obiettivo principale era confermare la Requirement Breakdown Structure (RBS) e definire il modello di ciclo di vita del progetto (PMLC) da adottare.
 
 \subsubsection{Modello PMLC}
-Il modello PMLC scelto rientra nell'\textit{Agile Project Management}, si tratta del \textit{Adaptive Project Management
-    Life Cycle Model}, ovvero l'obiettivo è noto ma non la soluzione, la quale è influenzata dai cambiamenti attesi.
-
+Il modello di ciclo di vita del progetto scelto rientra nell'ambito dell'Agile Project Management ed è noto come "Adaptive Project Management Life Cycle Model." Questo modello offre flessibilità quando l'obiettivo è noto ma la soluzione è influenzata da cambiamenti previsti. Questo approccio si adatta alle sfide dinamiche che possono emergere durante il progetto.
 
 \subsubsection{Workflow}
-Sono stati identificati alcuni processi automatizzabili all'interno del progetto:
-\begin{itemize}
-    \item testing;
-    \item aggiornamento delle dipendenze;
-    \item release semantica;
-    \item auto-merging dopo aver passato dei controlli automatici
-\end{itemize}
+Durante questo incontro, sono stati identificati processi che possono essere automatizzati all'interno del progetto. Ciò include il testing, l'aggiornamento delle dipendenze, il rilascio semantico e l'auto-merging dopo aver superato controlli automatici.
 
+In sintesi, la fase di Scoping and Initiation è cruciale per stabilire una base solida per il progetto di espansione di ScaFi. Attraverso incontri, analisi dei requisiti e definizione del modello di ciclo di vita, il team ha guadagnato una comprensione chiara del progetto e delle aspettative degli stakeholder. Questo prepara il terreno per la fase successiva, in cui si inizierà a pianificare e sviluppare il progetto in modo coerente con gli obiettivi stabiliti finora.
