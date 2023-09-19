@@ -1,3 +1,21 @@
+## [1.15.0](https://github.com/angelacorte/pm-report/compare/1.14.0...1.15.0) (2023-09-19)
+
+
+### Features
+
+* update sprints with tasks and duration ([b7a3c7d](https://github.com/angelacorte/pm-report/commit/b7a3c7d11965ea95e5876d465648985a50d9d6d5))
+
+
+### Bug Fixes
+
+* fix typo ([f41699c](https://github.com/angelacorte/pm-report/commit/f41699c89c2cb0c6fca5ce83a8be7e31524cbfe6))
+
+
+### Documentation
+
+* add few tasks ([6d3eece](https://github.com/angelacorte/pm-report/commit/6d3eecee1fb4db2ab73fbd6f26846b4d5d35769e))
+* update wbs ([023ff25](https://github.com/angelacorte/pm-report/commit/023ff25d5968e9a90daa834fb9acfe11314a583b))
+
 ## [1.14.0](https://github.com/angelacorte/pm-report/compare/1.13.1...1.14.0) (2023-09-18)
 
 
