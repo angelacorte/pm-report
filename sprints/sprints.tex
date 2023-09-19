@@ -47,10 +47,12 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Implementare il concetto di VM Status
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Definire un API di alto livello
@@ -58,17 +60,25 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Implementato l'Abstract Syntax tree
-                        \item Implementato il concetto di Export
-                        \item Configurato il workflow di release semantica
+                        \item 1.1.2 - Implementato il concetto di Slot (4 ore)
+                        \item 1.1.3 - Implementato il concetto di Path (4 ore)
+                        \item 1.1.4 - Implementato il concetto di Export (4 ore)
+                        \item 1.4 - Configurato il workflow di release semantica (6 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Implementati i concetti di Path e Slot
+                        \item 2.1.1.2 - Implementato il concetto di Path (3 ore)
+                        \item 2.1.1.1 - Implementato il concetto Slot (3 ore)
                     \end{itemize}
-              \item Iniziato il lavoro inerente ai fields reificati
+                    \color{blue}
+              \item In ScaFi-fields
+                    \begin{itemize}
+                        \item 2.3.1 - Iniziato il lavoro inerente ai fields reificati (3.5 ore)
+                    \end{itemize}
           \end{itemize}
 \end{itemize}
 
@@ -79,11 +89,13 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Implementare il Context
                         \item Iniziare l'implementazione del concetto di RoundVM
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Implementare il concetto di Export
@@ -95,19 +107,21 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Implementato il Context
-                        \item Iniziata l'implementazione della RoundVM
-                        \item Riparato il comportamento di Path
-                        \item Refattorizzata l'API di Context
+                        \item 1.1.5 - Implementato il Context (3 ore)
+                        \item 1.1.8 - Iniziata l'implementazione della RoundVM (4 ore)
+                        \item 1.1.3 - Riparato il comportamento di Path (2 ore)
+                        \item 1.1.5 - Refattorizzata l'API di Context (2 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Subentrati problemi nella configurazione di release semantica
-                        \item Implementati i fields reificati
-                        \item Implementato Export
-                        \item Implementato Context
+                        \item 2.4 - Subentrati problemi nella configurazione di release semantica (4 ore)
+                        \item 2.3.1 - Implementati i fields reificati (5 ore)
+                        \item 2.1.1.3 - Implementato il concetto di Export (3 ore)
+                        \item 2.1.1.4 - Implementato il concetto di Context (4 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -119,10 +133,12 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Completata la RoundVM
+                        \item Completare la RoundVM
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Iniziare ad implementare i costrutti del field calculus
@@ -131,14 +147,17 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Implementata la RoundVM
+                        \item 1.1.8 - Implementata la RoundVM (3.5 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Implementati i costrutti del field calculus \texttt{nbr} e \texttt{rep}
-                        \item Deciso di fermare momentaneamente lo sviluppo di RoundVM per provare ad utilizzare quella sviluppata in RuFi-core
+                        \item 2.1.2.2 - Implementati i costrutti del field calculus \texttt{nbr} (3 ore)
+                        \item 2.1.2.1 - Implementato il costrutto del field calculus \texttt{rep} (3 ore)
+                        \item 2.1.1.6 - Deciso di fermare momentaneamente lo sviluppo di RoundVM per provare ad utilizzare quella sviluppata in RuFi-core (3 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -150,11 +169,13 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Impostare il progetto Java-Rust
                         \item Sperimentare diverse soluzioni per la comunicazione tra Java e Rust (JNI, Wasmer, ScalaNative)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Vedere se è possibile rifattorizzare la VM, facendo uso dei fields reificati
@@ -163,14 +184,16 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Testati vari metodi per l'integrazione di RuFi in scala, optato per ScalaNative
-                        \item Costruito un esempio funzionante che utilizza Scala Native e integra qualche funzione di Rust utilizzando l'iteroperabilità di C
+                        \item 3.2 - Testati vari metodi per l'integrazione di RuFi in scala, optato per ScalaNative (6.5 ore)
+                        \item 3.2 - Costruito un esempio funzionante che utilizza Scala Native e integra qualche funzione di Rust utilizzando l'iteroperabilità di C (5 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Implementata libreria apposita per i fields reificati
+                        \item 2.3.4 - Implementata libreria apposita per i fields reificati (4 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -182,19 +205,25 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Implementare i costrutti del linguaggio
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Implementare i restanti costrutti e builtins
                     \end{itemize}
+                    \color{teal}
+                    \color{magenta}
               \item In RuFi-core-wrapper
                     \begin{itemize}
                         \item Definire un progetto Gradle+SBT+Cargo che integri RuFi in Scala
                         \item Partire con l'implementazione
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
                         \item Aggiungere la dipendenza di ScaFi-core
@@ -202,23 +231,30 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Il linguaggio non è stato implementato per via di alcune limitazioni di Rust
-                        \item Esplorate alcune soluzioni per aggirare i problemi
+                        \item 1.2.2 - Il linguaggio non è stato implementato per via di alcune limitazioni di Rust (4 ore)
+                        \item 1.1.1 Esplorate alcune soluzioni per aggirare i problemi di Rust (8 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Implementati i rimanenti costrutti e builtins
+                        \item 2.1.2.3 - Implementato il costrutto \textit{branch} (3 ore)
+                        \item 2.1.2.4 - Implementato il costrutto \textit{foldhood} (4 ore)
+                        \item 2.1.2.5 - Implementati i builtins (3 ore)
                     \end{itemize}
+                    \color{magenta}
               \item In RuFi-core-wrapper
                     \begin{itemize}
-                        \item Definito un progetto SBT+Cargo
-                        \item L'implementazione non è stata avviata per alcuni problemi di incompatibilità
+                        \item 3.3 - Definito un progetto SBT+Cargo (7 ore)
+                        \item 3.2 - L'implementazione non è stata avviata per alcuni problemi di incompatibilità (5 ore)
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
-                        \item Riparata la semantic release
+                        \item 2.4 - Riparata la semantic release (2 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -231,14 +267,18 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Esplorare soluzioni per l'implementazione dei costrutti del linguaggio
                     \end{itemize}
+                    \color{magenta}
               \item In RuFi-core-wrapper
                     \begin{itemize}
                         \item Iniziare l'implementazione
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
                         \item Aggiungere la dipendenza da ScaFi-core
@@ -246,12 +286,14 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
-                        \item Aggiunta la dipendenza a ScaFi-core
-                        \item Implementati i costrutti fondamentali del linguaggio
+                        \item 2.3.2 - Aggiunta la dipendenza a ScaFi-core (1 ora)
+                        \item 2.3.2. - Implementati i costrutti fondamentali del linguaggio (8 ore)
                     \end{itemize}
-              \item Sperimenti sull'interperabilità e costrutti del linguaggio in Rust hanno rivelato problemi complessi
+              \item 3.2 - Sperimenti sull'interperabilità e costrutti del linguaggio in Rust hanno rivelato problemi complessi (7 ore)
           \end{itemize}
 \end{itemize}
 
@@ -263,15 +305,19 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Cambiare l'API della VM per renderla immutabile
                         \item Implementare i costrutti fondamentali del linguaggio
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
                         \item Aggiungere test "TestByRound" e "TestByEquivalence"
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
                         \item Controllare la correttezza di "TestByRound"
@@ -280,19 +326,22 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Decisione di \textbf{non} rendere la RoundVM immutabile
-                        \item Implementati i costrutti fondamentali del linguaggio
+                        \item 1.1.6 - Decisione di \textbf{non} rendere la RoundVM immutabile (3.5 ore)
+                        \item 1.2.2 Implementati i costrutti fondamentali del linguaggio (8 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core
                     \begin{itemize}
-                        \item Aggiunti i test
+                        \item 2.2 - Aggiunti i test (5.5 ore)
                     \end{itemize}
+                    \color{cyan}
               \item In ScaFi-core-fields
                     \begin{itemize}
-                        \item "TestByRound" funziona correttamente ma deve essere espanso
-                        \item "TestByEquivalence" non è stato implementato
+                        \item 2.2 - "TestByRound" funziona correttamente ma deve essere espanso (5 ore)
+                        \item 2.2 - "TestByEquivalence" non è stato implementato
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -305,11 +354,14 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Implementare i test "TestByRound" e "TestByEquivalence"
+                        \item Implementare test "TestByRound" e "TestByEquivalence"
                         \item Rifattorizzare \texttt{nest} in \texttt{nestIn} e \texttt{nestOut}
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
                         \item Espandere "TestByRound"
@@ -318,14 +370,18 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Rifattorizzata \texttt{nest} in \texttt{nestIn} e \texttt{nestOut}
+                        \item 1.3.1 - Implementato "TestByRound" (4 ore)
+                        \item 1.2.2 - Rifattorizzata \texttt{nest} in \texttt{nestIn} e \texttt{nestOut} (3.5 ore)
                     \end{itemize}
+                    \color{blue}
+
               \item In ScaFi-fields
                     \begin{itemize}
-                        \item Espansa "TestByRound"
-                        \item Implementata "TestByEquivalence"
+                        \item 2.2 - Espansa "TestByRound" (3 ore)
+                        \item 2.2 - Implementata "TestByEquivalence" (4.5 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
@@ -338,6 +394,7 @@
 \begin{itemize}
     \item Goals:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
                         \item Implementare "TestByEquivalence"
@@ -345,9 +402,10 @@
           \end{itemize}
     \item Review:
           \begin{itemize}
+              \color{teal}
               \item In RuFi-core
                     \begin{itemize}
-                        \item Implementato "TestByEquivalence"
+                        \item 1.3.2 - Implementato "TestByEquivalence" (4 ore)
                     \end{itemize}
           \end{itemize}
 \end{itemize}
