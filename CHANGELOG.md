@@ -1,3 +1,10 @@
+## [1.16.0](https://github.com/angelacorte/pm-report/compare/1.15.3...1.16.0) (2023-09-28)
+
+
+### Features
+
+* change introduction ([98aa35a](https://github.com/angelacorte/pm-report/commit/98aa35a7e121180a1a0785cd3cfeffea66e36844))
+
 ## [1.15.3](https://github.com/angelacorte/pm-report/compare/1.15.2...1.15.3) (2023-09-19)
 
 
