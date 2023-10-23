@@ -1,3 +1,19 @@
+## [2.0.0](https://github.com/angelacorte/pm-report/compare/1.16.0...2.0.0) (2023-10-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove bibliography. report ready for submission
+
+### Features
+
+* remove bibliography. report ready for submission ([a63f90f](https://github.com/angelacorte/pm-report/commit/a63f90f0680f92e17d3ea101f760d4172d4a4f75))
+
+
+### General maintenance
+
+* fix some syntax errors ([9f00361](https://github.com/angelacorte/pm-report/commit/9f00361ce43214f0c3464bc8de54d8d59efca010))
+
 ## [1.16.0](https://github.com/angelacorte/pm-report/compare/1.15.3...1.16.0) (2023-09-28)
 
 
